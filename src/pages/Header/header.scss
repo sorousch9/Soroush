@@ -1,0 +1,100 @@
+.header {
+    min-height: 100vh;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+.img img {
+  height: 108px;
+  width: 108px;
+}
+.name {
+  color: #EDEDED;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.desc {
+  color: #EDEDED;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 300;
+}
+.social-icons {
+  list-style: none;
+  margin-bottom: 20px;
+}
+.list-inline-item {
+  display: inline-block;
+  margin-right: 10px;
+}
+.list-inline-item a:hover{
+    color:#DA0037
+}
+
+.list-inline-item a {
+  color: #EDEDED;
+}
+
+.contact-button {
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  max-width: 160px;
+  line-height: 50px;
+  position: relative;
+  animation: fadeInAnimation 1s 2s backwards;
+  white-space: nowrap;
+}
+
+.contact-button div {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 35px 0 35px;
+}
+
+.contact-button span.bg {
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  left: -5%;
+  top: 0;
+  transform: skewX(-10deg);
+  transition: all 0.5s linear;
+}
+
+.contact-button:hover span.bg {
+  background: #DA0037;
+  width: 110%;
+  border-radius: 0 20px 0 20px;
+  
+}
+
+.contact-button span.base {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0 15px 0 15px;
+  border: 1px solid #EDEDED;
+}
+
+.contact-button span.text {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  color: #EDEDED;
+}
