@@ -45,8 +45,8 @@ export const Header = () => {
         </ul>
         <Link to="/contact" className="contact-button">
           <div>
-            <span className="bg switch__bg"></span>
-            <span className="base switch__border-color"></span>
+            <span className="bg "></span>
+            <span className="base "></span>
             <span className="text">Contact me</span>
           </div>
         </Link>
