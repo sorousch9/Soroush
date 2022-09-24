@@ -6,11 +6,17 @@
   padding: 0;
   box-sizing: border-box;}
   body {
-    background-color: #171717;
+    background-color: #2e2c4e;
     margin: 0;
     font-family: 'Rubik', sans-serif;
   }
   code {
     font-family: 'Rubik', sans-serif;
   }
-  
+  :root {
+    --primaryBG: #2e2c4e;
+    --color-btn: #ff4c60;
+    --color-2: #ffd15c;
+    --color-text: #EDEDED;
+    
+  }

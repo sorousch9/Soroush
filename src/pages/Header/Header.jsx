@@ -1,13 +1,18 @@
 import "./header.scss";
 import imgper from "../../assets/person-vec.png";
 
-import InstagramIcon from "@mui/icons-material/Instagram";
-import { GitHub, Twitter, WhatsApp } from "@mui/icons-material";
+import {
+  BsInstagram,
+  BsGithub,
+  BsWhatsapp,
+  BsTwitter,
+  BsFillCaretDownFill,
+} from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 export const Header = () => {
   return (
-    <section >
+    <section>
       <div className="header">
         <div className="img">
           <img src={imgper} alt="my vector" />
@@ -24,22 +29,22 @@ export const Header = () => {
         <ul className="social-icons">
           <li className="list-inline-item">
             <a href="/">
-              <InstagramIcon fontSize="large" />
+              <BsInstagram />
             </a>
           </li>
           <li className="list-inline-item">
             <a href="/">
-              <GitHub fontSize="large" />
+              <BsGithub />
             </a>
           </li>
           <li className="list-inline-item">
             <a href="/">
-              <Twitter fontSize="large" />
+              <BsTwitter />
             </a>
           </li>
           <li className="list-inline-item">
             <a href="/">
-              <WhatsApp fontSize="large" />
+              <BsWhatsapp />
             </a>
           </li>
         </ul>

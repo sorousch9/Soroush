@@ -1,11 +1,10 @@
-import { Close, MenuOpen } from "@mui/icons-material";
 import "./sidebar.scss";
 import logo from "../../assets/LOGOw.png";
 import React, { useReducer } from "react";
 import { reducer } from "../../Hooks/useReducer";
 import { Link, NavLink } from "react-router-dom";
 import { sideBarMenu } from "../../data";
-
+import { BsList,BsX } from "react-icons/bs";
 const defaultOptions = {
   showAside1: false,
   openCloseNav1: false,
@@ -16,7 +15,7 @@ export const Sidebar = React.memo(() => {
 
   return (
     <div className="sidebar">
-      <MenuOpen
+      <BsList
         onClick={() => dispatch({ type: "OPEN_NAVBAR" })}
         className="menu-icon switch__color"
       />
@@ -26,7 +25,7 @@ export const Sidebar = React.memo(() => {
         }`}
       >
         <div className="aside-wrapper">
-          <Close
+          <BsX
             onClick={() => dispatch({ type: "CLOSE_NAVBAR" })}
             className="close-btn"
           />
@@ -50,8 +49,8 @@ export const Sidebar = React.memo(() => {
                     }}
                     to={url}
                   >
-                    {icon}
-                    {text}
+                    <div>{icon}</div>
+                    <div>{text}</div>
                   </NavLink>
                 </li>
               );

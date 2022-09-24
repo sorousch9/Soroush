@@ -1,41 +1,34 @@
-import {
-  BubbleChart,
-  DynamicFeed,
-  GridView,
-  PlaylistAddCheckCircle,
-  School,
-  WorkHistory,
-} from "@mui/icons-material";
+import { BsGrid,BsPersonCheck,BsJournalCheck,BsLayers,BsChat,BsAward } from "react-icons/bs";
 
 export const sideBarMenu = [
   {
     text: "Home",
-    icon: <GridView className="link-icon" />,
+    icon: <BsGrid className="link-icon" />,
     url: "/",
   },
   {
     text: "About",
-    icon: <PlaylistAddCheckCircle className="link-icon" />,
+    icon: <BsPersonCheck className="link-icon" />,
     url: "/about",
   },
   {
     text: "Projects",
-    icon: <WorkHistory className="link-icon" />,
+    icon: <BsJournalCheck className="link-icon" />,
     url: "/project",
   },
   {
     text: "Experience",
-    icon: <School className="link-icon" />,
+    icon: <BsAward className="link-icon" />,
     url: "/blog",
   },
   {
     text: "Works",
-    icon: <DynamicFeed className="link-icon" />,
+    icon: <BsLayers className="link-icon" />,
     url: "/contact",
   },
   {
     text: "Contact",
-    icon: <BubbleChart className="link-icon" />,
+    icon: <BsChat className="link-icon" />,
     url: "/tutorial",
   },
 ];
