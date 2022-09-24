@@ -1,5 +1,5 @@
 .header {
-    min-height: 100vh;
+  min-height: 100vh;
   position: relative;
   z-index: 1;
   display: flex;
@@ -36,16 +36,14 @@
 .list-inline-item {
   display: inline-block;
   margin-right: 10px;
-  
 }
 .list-inline-item a {
-  color: #EDEDED;
+  color: #ededed;
   font-size: 28;
-  
 }
-.list-inline-item a:hover{
-    color: var(--color-btn);
-    font-size: 32px;
+.list-inline-item a:hover {
+  color: var(--color-btn);
+  font-size: 32px;
 }
 .contact-button {
   display: inline-block;
@@ -80,7 +78,6 @@
   background: var(--color-btn);
   width: 110%;
   border-radius: 0 20px 0 20px;
-  
 }
 
 .contact-button span.base {
@@ -101,4 +98,37 @@
   left: 0;
   color: var(--color-text);
 }
-
+.scroll {
+  position: absolute;
+  bottom: 40px;
+  left: 1;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  text-decoration: none;
+  color: var(--color-text);
+  max-width: 100px;
+  text-align: center;
+  cursor: pointer;
+  &::after {
+    content: "scroll down";
+  }
+}
+.scroll-down {
+  font-size: 1.8rem;
+  animation: scroll 2s ease-in alternate-reverse infinite;
+}
+.scroll_down:hover .scroll::after {
+  display: block;
+}
+@keyframes scroll {
+  0% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
