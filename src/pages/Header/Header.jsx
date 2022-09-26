@@ -54,9 +54,8 @@ export const Header = () => {
             <span className="base "></span>
             <span className="text">Contact me</span>
           </div>
-          
         </Link>
-        <Link to="/contact" className="scroll" >
+        <Link to="/About" className="scroll" >
             <BsFillCaretDownFill className="scroll-down" />
           </Link>
       </div>

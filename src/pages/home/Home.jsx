@@ -1,8 +1,12 @@
-import React from 'react'
-import { Header } from '../Header/Header'
+import React from "react";
+import { About } from "../About/About";
+import { Header } from "../Header/Header";
 
 export const Home = () => {
   return (
-    <Header/>
-  )
-}
+    <>
+      <Header />
+      <About />
+    </>
+  );
+};

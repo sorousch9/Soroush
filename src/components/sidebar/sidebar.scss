@@ -1,6 +1,7 @@
 .aside {
   width: 200px;
   height: 100%;
+  border-right: 1px solid hsla(0,0%,100%,.1);
   position: fixed;
   top: 0;
   left: 0;
@@ -8,6 +9,8 @@
   background-color:var(--primaryBG) ;
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transform: translate(0);
+  overflow-y: auto;
+    overflow-x: hidden;
   &::after {
     content: "";
     position: absolute;
@@ -65,13 +68,13 @@
 
 ul.links li {
   line-height: 2.8;
+  list-style: none;
 }
 
 ul.links li .link-icon {
-  margin-left: 30px;
-  font-size: 1.5rem;
+  margin-left: 10px;
+  font-size: 1.4rem;
   margin-right: 20px;
-  list-style: none;
   color: #ededed;
   text-decoration: none;
   display: flex;
@@ -84,7 +87,7 @@ a.nav__links {
   text-decoration: none;
   color: var(--color-2);;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1rem;
   align-content: center;
   display: flex;
   align-items: center

@@ -1,0 +1,172 @@
+.container,
+.container-fluid {
+  width: 100%;
+  padding-right: 30px;
+  padding-left: 240px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.section-title {
+  font-size: 36px;
+  margin: 0 0 0 14px;
+  position: relative;
+}
+.gaper {
+  clear: both;
+  height: 60px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.img-sec img {
+  max-width: 80%;
+
+  height: auto;
+}
+.gaper-img {
+  height: 30px;
+}
+
+.box-info {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-top: 15px;
+  max-width: 75%;
+  background-color: #9e9e9e3b !important;
+  border-radius: 15px;
+}
+.download-button {
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  max-width: 160px;
+  line-height: 50px;
+  position: relative;
+  animation: fadeInAnimation 1s 2s backwards;
+  white-space: nowrap;
+}
+
+.download-button div {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 35px 0 35px;
+}
+
+.download-button span.bg {
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  left: -5%;
+  top: 0;
+  transform: skewX(-10deg);
+  transition: all 0.5s linear;
+}
+
+.download-button:hover span.bg {
+  background: var(--color-btn);
+  width: 110%;
+  border-radius: 0 20px 0 20px;
+}
+
+.download-button span.base {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0 15px 0 15px;
+  border: 1px solid var(--color-text);
+}
+
+.download-button span.text {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  color: var(--color-text);
+}
+
+.info {
+  position: relative;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.info p {
+  font-weight: 400;
+}
+.skill-item {
+  padding-bottom: 10px;
+}
+.text-infos {
+  color: var(--color-text);
+  font-size: 22px;
+  font-weight: 300;
+}
+.progress {
+  height: 9px;
+  margin-bottom: 0;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+.progress-bar {
+  float: left;
+  width: 0;
+  height: 100%;
+  font-size: 12px;
+  line-height: 7px;
+  color: #fff;
+  text-align: center;
+  transition: width 0.6s ease;
+}
+
+@media screen and (max-width: 1200px) {
+  .container,
+  .container-fluid {
+    padding-left: 15px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container,
+  .container-fluid {
+    padding-left: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container,
+  .container-fluid {
+    padding-left: 15px;
+  }
+}
+@media screen and (max-width: 777px) {
+  .row {
+    justify-content: center;
+  }
+  .box-img {
+    justify-content: center;
+    display: flex;
+    width: 40%;
+  }
+  .img-sec {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+  .info p {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container,
+  .container-fluid {
+    padding-left: 15px;
+  }
+}
