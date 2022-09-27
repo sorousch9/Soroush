@@ -3,12 +3,14 @@ import "./about.scss";
 import { Link } from "react-router-dom";
 import profile from "../../assets/person-vec.png";
 import { Col, Container, Row } from "react-bootstrap";
+import Circle from "react-circle";
 
 export const About = () => {
   return (
     <section>
       <Container fluid>
-        <div>
+        <div className="sec-title">
+          <span className="section-title-op">About</span>
           <h2 className="section-title">About Me</h2>
         </div>
         <div className="gaper"></div>
@@ -43,47 +45,170 @@ export const About = () => {
               <div className="progress-wrapper">
                 <div className="skill-item">
                   <div className="skill-info">
-                    <h4 className="text-infos">Development</h4>
+                    <h4 className="text-infos">UI/Ux Design</h4>
                     <span className="pro">85%</span>
                   </div>
-                  <div className="progress">
-                    <div
-                      className="progress-bar"
-                      style={{ width: "85%", background: " #ffc107" }}
-                    ></div>
+                  <div className="progress-bar">
+                    <div className="progress-first "></div>
                   </div>
                 </div>
               </div>
               <div className="progress-wrapper">
                 <div className="skill-item">
                   <div className="skill-info">
-                    <h4 className="text-infos">UI/UX Design</h4>
-                    <span className="pro">80%</span>
-                  </div>
-                  <div className="progress">
-                    <div
-                      className="progress-bar"
-                      style={{ width: "80%", background: " #dc3545" }}
-                    ></div>
-                  </div>
-                </div>
-              </div>
-              <div className="progress-wrapper">
-                <div className="skill-item">
-                  <div className="skill-info">
-                    <h4 className="text-infos">Photography</h4>
+                    <h4 className="text-infos">Back-end Development</h4>
                     <span className="pro">75%</span>
                   </div>
-                  <div className="progress">
-                    <div
-                      className="progress-bar"
-                      style={{ width: "75%", background: " #0dcaf0" }}
-                    ></div>
+                  <div className="progress-bar">
+                    <div className="progress-sec"></div>
+                  </div>
+                </div>
+              </div>
+              <div className="progress-wrapper">
+                <div className="skill-item">
+                  <div className="skill-info">
+                    <h4 className="text-infos">Front-end Development</h4>
+                    <span className="pro">95%</span>
+                  </div>
+                  <div className="progress-bar">
+                    <div className="progress-third"></div>
+                  </div>
+                </div>
+              </div>
+              <div className="progress-wrapper">
+                <div className="skill-item">
+                  <div className="skill-info">
+                    <h4 className="text-infos">App Development</h4>
+                    <span className="pro">75%</span>
+                  </div>
+                  <div className="progress-bar">
+                    <div className="progress-Fourth "></div>
                   </div>
                 </div>
               </div>
             </Col>
           </Row>
+        </Row>
+        <div className="gaper-skill"></div>
+        <Row>
+          <Col className="" md={3} sm={6}>
+            <div className="details">
+              <Circle
+                progress={90}
+                animationDuration="3s linear forwards"
+                size="100"
+                lineWidth="40"
+                progressColor="var(--color-3)"
+                roundedStroke={true}
+              />
+              <p className="circle-info">React Js</p>
+            </div>
+          </Col>
+          <Col className="" md={3} sm={6}>
+            <div className="details">
+              <Circle
+                progress={80}
+                animationDuration="3s linear forwards"
+                size="100"
+                lineWidth="40"
+                progressColor="var(--color-3)"
+                roundedStroke={true}
+              />
+              <p className="circle-info">Node Js </p>
+            </div>
+          </Col>
+          <Col className="" md={3} sm={6}>
+            <div className="details">
+              <Circle
+                progress={85}
+                animationDuration="3s linear forwards"
+                size="100"
+                lineWidth="40"
+                progressColor="var(--color-3)"
+                roundedStroke={true}
+              />
+              <p className="circle-info">Javascript</p>
+            </div>
+          </Col>
+          <Col className="" md={3} sm={6}>
+            <div className="details">
+              <Circle
+                progress={75}
+                animationDuration="3s linear forwards"
+                size="100"
+                lineWidth="40"
+                progressColor="var(--color-3)"
+                roundedStroke={true}
+              />
+              <p className="circle-info">Figma </p>
+            </div>
+          </Col>
+
+          <Col className="row-circle" md={4} sm={4} xs={6}>
+            <div className="details-s">
+              <Circle
+                progress={60}
+                animationDuration="3s linear forwards"
+                size="60"
+                lineWidth="40"
+                progressColor="var(--color-3)"
+                roundedStroke={false}
+              />
+              <p className="circle-info-s">Python </p>
+            </div>
+          </Col>
+          <Col className="row-circle" md={4} sm={4} xs={6}>
+            <div className="details-s">
+              <Circle
+                progress={80}
+                animationDuration="3s linear forwards"
+                size="60"
+                lineWidth="40"
+                progressColor="var(--color-3)"
+                roundedStroke={false}
+              />
+              <p className="circle-info-s">Photoshop </p>
+            </div>
+          </Col>
+          <Col md={4} sm={4} xs={6}>
+            <div className="details-s">
+              <Circle
+                progress={75}
+                animationDuration="3s linear forwards"
+                size="60"
+                lineWidth="40"
+                progressColor="var(--color-3)"
+                roundedStroke={false}
+              />
+              <p className="circle-info-s">Illustrator </p>
+            </div>
+          </Col>
+          <Col className="row-circle" md={6} sm={6} xs={6}>
+            <div className="details-s">
+              <Circle
+                progress={95}
+                animationDuration="3s linear forwards"
+                size="60"
+                lineWidth="40"
+                progressColor="var(--color-3)"
+                roundedStroke={false}
+              />
+              <p className="circle-info-s">Html & Css   </p>
+            </div>
+          </Col>
+          <Col className="row-circle" md={6} sm={6} xs={6}>
+            <div className="details-s">
+              <Circle
+                progress={90}
+                animationDuration="3s linear forwards"
+                size="60"
+                lineWidth="40"
+                progressColor="var(--color-3)"
+                roundedStroke={false}
+              />
+              <p className="circle-info-s">Photography</p>
+            </div>
+          </Col>
         </Row>
       </Container>
     </section>

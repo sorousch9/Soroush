@@ -6,10 +6,18 @@
   margin-right: auto;
   margin-left: auto;
 }
+
+.section-title-op{
+  font-size: 72px;
+font-weight: 800;
+opacity: 0.1;
+}
+
 .section-title {
   font-size: 36px;
   margin: 0 0 0 14px;
   position: relative;
+  margin-top: -75px;
 }
 .gaper {
   clear: both;
@@ -24,7 +32,8 @@
 
 .img-sec img {
   max-width: 80%;
-
+  background: rgb(239, 239, 240);
+  border-radius: 45%;
   height: auto;
 }
 .gaper-img {
@@ -35,11 +44,13 @@
   position: relative;
   width: 100%;
   padding-right: 15px;
-  padding-top: 15px;
+  padding: 50px;
   max-width: 75%;
-  background-color: #9e9e9e3b !important;
-  border-radius: 15px;
+  background-color: #9e9e9e3b;
+  border-radius: 21px;
+  height: fit-content;
 }
+
 .download-button {
   display: inline-block;
   width: 100%;
@@ -110,21 +121,105 @@
   font-size: 22px;
   font-weight: 300;
 }
-.progress {
-  height: 9px;
-  margin-bottom: 0;
-  overflow: hidden;
-  background-color: #f1f1f1;
-}
 .progress-bar {
   float: left;
-  width: 0;
+  width: 100%;
+  height: 12px;
+  background-color: #f1f1f1;
+  border-radius: 30px;
+  box-shadow: 0px 0px 10px #9985fb;
+}
+.progress-first{
+  width: 0%;
   height: 100%;
-  font-size: 12px;
-  line-height: 7px;
-  color: #fff;
-  text-align: center;
-  transition: width 0.6s ease;
+  background-color: #38df33;
+  border-radius: 30px;
+  animation: progress-first 3s linear forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+}
+@keyframes progress-first {
+
+  100% {
+    width: 85%;
+  }
+}
+.progress-sec{
+  width: 0%;
+  height: 100%;
+  background-color: #30f829;
+  border-radius: 30px;
+  animation: progress-sec 3s normal forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  transition: 0.4s linear;  
+  transition-property: width; 
+}
+@keyframes progress-sec{
+  from { width: 0 }
+     to   { width: 75% }
+}
+.progress-third {
+  background-color: #30f829;
+  height: 100%;
+  border-radius: 30px;
+  animation: progress-third  3s linear forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+}
+@keyframes progress-third  {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 95%;
+  }
+}
+.progress-Fourth {
+  background-color: #30f829;
+  height: 100%;
+  border-radius: 30px;
+  animation: progress-Fourth  3s linear forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+}
+@keyframes progress-Fourth  {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 75%;
+  }
+}
+
+.gaper-skill {
+  height: 100px;
+}
+.details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #9e9e9e1c;
+  border-radius: 21px;
+  margin: 8px auto;
+  padding-top: 15px;
+}
+.circle-info {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.details-s {
+  display: flex;
+  background-color: #9e9e9e1c;
+  border-radius: 21px;
+  margin: 5px auto;
+  align-items: flex-end;
+ 
+}
+.circle-info-s {
+  font-size: 16px;
+  font-weight: 300;
+  padding: auto;
+  margin-left: 10px;
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -169,4 +264,17 @@
   .container-fluid {
     padding-left: 15px;
   }
+}
+
+@media screen and (max-width: 450px) {
+  .circle-info-s {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 10px;
+  
+  }
+  .box-info {
+    padding: 20px 10px;
+  }
+ 
 }
