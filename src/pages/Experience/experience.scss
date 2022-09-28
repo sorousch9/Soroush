@@ -1,0 +1,164 @@
+.sec {
+  margin-left: 230px;
+}
+.section-title-op {
+  font-size: 4.5rem;
+  font-weight: 800;
+  opacity: 0.1;
+}
+
+.section-title {
+  font-size: 3rem;
+  margin: 0 0 0 14px;
+  position: relative;
+  margin-top: -75px;
+}
+.gaper {
+  margin: 5%;
+}
+.resume-wrapper {
+  border-left: 3px solid #b1b1b1;
+}
+.small-title {
+  margin-bottom: 25px;
+  display: flex;
+  align-items: flex-end;
+}
+.resume {
+  display: flex;
+  margin-right: 30px;
+}
+.resume-summary {
+  display: flex;
+  align-self: flex-start;
+  flex: 0 0 220px;
+  max-width: 220px;
+  padding-left: 20px;
+  position: relative;
+
+  ::before {
+    content: "";
+    background: #10121b;
+    border: 3px solid #d8d8d8;
+    border-radius: 100px;
+    height: 15px;
+    left: -9px;
+    position: absolute;
+    top: 5px;
+    width: 15px;
+  }
+}
+.resume-year {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.resume-details {
+  position: relative;
+  ::before {
+    background: #ececec;
+    content: "";
+    height: 2px;
+    left: -30px;
+    position: absolute;
+    top: 15px;
+    width: 20px;
+  }
+}
+.resume-details h6 {
+  font-size: 1rem;
+}
+.resume-details p {
+  font-size: 0.9rem;
+}
+
+.about-skill {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1px;
+  opacity: 0.6;
+}
+.skill-container {
+  padding: 15px;
+  text-decoration: none;
+  margin: 10px 10px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px 0px #0808084c;
+  position: relative;
+  display: grid;
+  place-items: center;
+  position: relative;
+  transition: all 250ms;
+  .skills-icon {
+    font-size: 2.5rem;
+    color: var(--color-text);
+  }
+  span {
+    display: block;
+    font-size: 0.875rem;
+    text-transform: capitalize;
+    margin-top: 10px;
+    color: var(--color-text);
+  }
+}
+.about-skill:hover{
+  opacity: 1;
+}
+.skill-container:hover {
+  width: 100%;
+  transform: translateY(-10px);
+ 
+}
+
+@media screen and (max-width: 1200px) {
+  .sec {
+    margin-left: 0px;
+  }
+  .resume-details {
+    ::before {
+      background: none;
+    }
+  }
+  .resume-summary {
+    flex: 0 0 120px;
+    padding-left:15px;
+ 
+  }
+  .resume {
+    margin-right: 0px;
+  }
+  .small-title{
+    margin-top: 30px;
+  }
+
+}
+@media screen and (max-width: 470px) {
+  .skill-container {
+    padding: 4px;
+    margin: 5px ;
+    border-radius: 3px;
+    .skills-icon {
+      font-size: 1.8rem;
+    }
+    span {
+      font-size: 0.775rem;
+
+    }
+  }
+  .resume-details {
+    ::before {
+      background: none;
+    }
+  }
+  .resume-summary {
+    flex: 0 0 120px;
+    padding-left:15px;
+ 
+  }
+  .resume {
+    margin-right: 0px;
+  }
+  .small-title{
+    margin-top: 30px;
+  }
+}
