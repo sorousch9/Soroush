@@ -2,10 +2,11 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { HiBriefcase } from "react-icons/hi";
 import { FaGraduationCap } from "react-icons/fa";
-import "./experience.scss";
+import "./resume.scss";
 import { skillico } from "../../data";
 
-export const Experience = () => {
+
+export const Resume = () => {
   return (
     <section className="sec">
       <Container fluid="xl">
@@ -13,7 +14,7 @@ export const Experience = () => {
           <span className="section-title-op">RESUME</span>
           <h2 className="section-title">Resume</h2>
         </div>
-        <div className="gaper">
+
         <Row>
           <Col md={6}>
             <div>
@@ -33,8 +34,8 @@ export const Experience = () => {
                   <h5> Frontend Web Developer and SEO Manager</h5>
                   <h6> Branco.ir</h6>
                   <p>
-                  Web-Content- und SEO-Manager<br></br>
-                  Kitchen Appliances Store
+                    Web-Content- und SEO-Manager<br></br>
+                    Kitchen Appliances Store
                   </p>
                 </div>
               </div>
@@ -46,8 +47,8 @@ export const Experience = () => {
                   <h5> Frontend Web Developer</h5>
                   <h6> CAN.ir</h6>
                   <p>
-                  Web Developer WordPress
-                  Manufacturer kitchen store for home appliances
+                    Web Developer WordPress Manufacturer kitchen store for home
+                    appliances
                   </p>
                 </div>
               </div>
@@ -70,9 +71,7 @@ export const Experience = () => {
                 <div className="resume-details">
                   <h5> Technical Computer Science</h5>
                   <h6> University of Shamsipur | Iran </h6>
-                  <p>
-                  four semesters
-                  </p>
+                  <p>four semesters</p>
                 </div>
               </div>
               <div className="resume">
@@ -82,9 +81,7 @@ export const Experience = () => {
                 <div className="resume-details">
                   <h5>Financial Accounting </h5>
                   <h6> University of Shamsipur | Iran </h6>
-                  <p>
-                  Degree: Bachelor of Arts high school diploma
-                  </p>
+                  <p>Degree: Bachelor of Arts high school diploma</p>
                 </div>
               </div>
               <div className="resume">
@@ -100,22 +97,23 @@ export const Experience = () => {
             </div>
           </Col>
           <div className="about-skill">
-           
-           {skillico.map((item ,index) =>(
-             <Col bottom="true" key={index + item} md={2} sm={3} xs={3}>
-               <a href={item.url}
-               target="_blank"
-               rel="noopener noreferrer"
+          
+              {skillico.map((item, index) => (
+                <Col bottom="true" key={index + item} md={2} sm={3} xs={3}>
+                  <a
+                    href={item.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="skill-container"
+                  >
+                    {item.icon}
+                    <span>{item.spanText}</span>
+                  </a>
+                </Col>
+              ))}
               
-               className="skill-container" >
-                   {item.icon}
-                   <span>{item.spanText}</span>
-               </a>
-             </Col>
-           ))}
-        
-       </div>
-        </Row></div>
+          </div>
+        </Row>
       </Container>
     </section>
   );

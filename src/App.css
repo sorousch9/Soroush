@@ -1,4 +1,5 @@
 @import 'animate.css';
+
 @import 'bootstrap/dist/css/bootstrap.min.css';
 *,
 ::after,
@@ -7,7 +8,7 @@
   padding: 0;
   box-sizing: border-box;}
   body {
-    background-color: #2e2c4e;
+    background-color: #252439;
     margin: 0;
     font-family: 'Rubik', sans-serif;
     color: #EDEDED;
@@ -16,10 +17,10 @@
     font-family: 'Rubik', sans-serif;
   }
   :root {
-    --primaryBG: #2e2c4e;
-    --color-btn: #ff4c60;
+    --primaryBG: #252439;
+    --color-btn: #fb503b;
     --color-2: #ffd15c;
-    --color-3: #30f829;
+    --color-3: rgb(39, 228, 171);
     --color-text: #EDEDED;
 
     

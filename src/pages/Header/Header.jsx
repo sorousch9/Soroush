@@ -9,10 +9,12 @@ import {
   BsFillCaretDownFill,
 } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import { Container } from "react-bootstrap";
 
 export const Header = () => {
   return (
     <section>
+      <Container fluid="xl">
       <div className="header">
         <div className="img">
           <img src={imgper} alt="my vector" />
@@ -58,7 +60,7 @@ export const Header = () => {
         <Link to="/About" className="scroll" >
             <BsFillCaretDownFill className="scroll-down" />
           </Link>
-      </div>
+      </div></Container>
     </section>
   );
 };

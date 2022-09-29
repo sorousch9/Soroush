@@ -1,0 +1,76 @@
+.sec {
+  margin-left: 230px;
+}
+.section-title-op {
+  font-size: 4.5rem;
+  font-weight: 800;
+  opacity: 0.1;
+}
+
+.section-title {
+  font-size: 3rem;
+  margin: 0 0 0 14px;
+  margin-top: -75px;
+}
+.works-list {
+  list-style: none;
+  margin: 0;
+}
+.works-item {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.project-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.works-content {
+  position: absolute;
+  float: left;
+  align-items: center;
+  clear: both;
+}
+.works-details {
+  float: left;
+  padding: 50px;
+}
+.works-category a {
+  margin-bottom: 4px;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color-2);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.works-title a {
+  margin-bottom: 24px;
+  text-decoration: none;
+  color: var(--color-text);
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.works-view-project a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--bs-red);
+  font-size: 1rem;
+  font-weight: 400;
+}
+@media screen and (max-width: 1200px) {
+  .sec {
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .works-details a {
+    font-size: 0.8rem;
+  }
+  .works-details span {
+    font-size: 1rem;
+  }
+}

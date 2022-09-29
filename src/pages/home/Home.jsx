@@ -1,14 +1,16 @@
 import React from "react";
 import { About } from "../About/About";
-import { Experience } from "../Experience/Experience";
+import { Resume } from "../Resume/Resume";
 import { Header } from "../Header/Header";
+import { Works } from "../Works/Works";
 
 export const Home = () => {
   return (
     <>
       <Header />
       <About />
-      <Experience />
+      <Resume />
+      <Works />
     </>
   );
 };

@@ -25,20 +25,21 @@ export const sideBarMenu = [
     url: "/about",
   },
   {
-    text: "Experience",
+    text: "Resume",
     icon: <BsAward className="link-icon" />,
-    url: "/experience",
+    url: "/resume",
+  },
+  {
+    text: "Works",
+    icon: <BsLayers className="link-icon" />,
+    url: "/works",
   },
   {
     text: "Projects",
     icon: <BsJournalCheck className="link-icon" />,
     url: "/project",
   },
-  {
-    text: "Works",
-    icon: <BsLayers className="link-icon" />,
-    url: "/contact",
-  },
+
   {
     text: "Contact",
     icon: <BsChat className="link-icon" />,

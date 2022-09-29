@@ -13,9 +13,6 @@
   position: relative;
   margin-top: -75px;
 }
-.gaper {
-  margin: 5%;
-}
 .resume-wrapper {
   border-left: 3px solid #b1b1b1;
 }
@@ -107,11 +104,14 @@
 .skill-container:hover {
   width: 100%;
   transform: translateY(-10px);
- 
+}
+.ss{
+  width:100%;
+  border-bottom: var(--color-text) solid 5px;
 }
 
 @media screen and (max-width: 1200px) {
-  .sec {
+  .sec{
     margin-left: 0px;
   }
   .resume-details {
