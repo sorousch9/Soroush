@@ -1,8 +1,8 @@
 import { Container } from "react-bootstrap";
 import "./works.scss";
-import p1 from "../../assets/1.jpg";
-import p2 from "../../assets/2.jpg";
-import p3 from "../../assets/3.jpg";
+import p1 from "../../assets/1.png";
+import p2 from "../../assets/2.png";
+import p3 from "../../assets/3.png";
 import { BsBoxArrowInRight } from "react-icons/bs";
 
 export const Works = () => {
@@ -24,7 +24,7 @@ export const Works = () => {
                   </span>
                   <h3 className="works-title">
                     <span href="/">
-                      Web App Store with<br></br> Reacr and Redux
+                      Web App Store with<br></br> React and Redux
                     </span>
                   </h3>
                   <span className="works-view-project">
