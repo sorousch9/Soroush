@@ -8,11 +8,12 @@ import { BsBoxArrowInRight } from "react-icons/bs";
 export const Works = () => {
   return (
     <div id="works" className="sec">
-      <Container fluid="xl">
-        <div className="sec-title">
+      <div className="sec-title">
           <span className="section-title-op">WORKS</span>
           <h2 className="section-title">My Amazing Works</h2>
         </div>
+      <Container fluid="xl">
+        
         <div className="works-list">
           <div className="works-items">
             <div className="works-item">

@@ -120,10 +120,13 @@
 .scroll-down {
   font-size: 1.8rem;
   animation: scroll 2s ease-in alternate-reverse infinite;
+
 }
 .scroll_down:hover .scroll::after {
-  display: block;
+  display: block
+
 }
+
 @keyframes scroll {
   0% {
     transform: translateY(5px);
@@ -136,7 +139,8 @@
   }
 }
 
-@media screen and (max-width:1200px) {
-  .header{
-   margin-left: 0px;
-  }}
+@media screen and (max-width: 1200px) {
+  .header {
+    margin-left: 0px;
+  }
+}

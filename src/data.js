@@ -6,7 +6,7 @@ import {
   BsChat,
   BsAward,
 } from "react-icons/bs";
-import { BsBootstrapFill, BsGithub,} from "react-icons/bs";
+import { BsBootstrapFill, BsGithub } from "react-icons/bs";
 import { SiSass, SiJquery, SiExpress, SiRedux } from "react-icons/si";
 
 import { AiFillHtml5 } from "react-icons/ai";
@@ -43,7 +43,7 @@ export const sideBarMenu = [
   {
     text: "Contact",
     icon: <BsChat className="link-icon" />,
-    url: "/tutorial",
+    url: "/contact",
   },
 ];
 export const skillico = [
@@ -57,7 +57,7 @@ export const skillico = [
     spanText: "Redux",
     url: "https://redux.js.org/introduction/getting-started",
   },
-  
+
   {
     icon: <IoLogoJavascript className="skills-icon" />,
     spanText: "JAVASCRIPT",
@@ -112,7 +112,4 @@ export const skillico = [
     spanText: "CSS",
     url: "https://developer.mozilla.org/en-US/docs/Web/CSS",
   },
- 
-
- 
 ];

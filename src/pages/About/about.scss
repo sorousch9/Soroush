@@ -1,10 +1,13 @@
-.sec{
+.sec {
   margin-left: 230px;
 }
-.section-title-op{
+.sec-title {
+  margin: 20px 10px 20vh 10px;
+}
+.section-title-op {
   font-size: 4.5rem;
-font-weight: 800;
-opacity: 0.1;
+  font-weight: 800;
+  opacity: 0.1;
 }
 .section-title {
   font-size: 3rem;
@@ -13,7 +16,7 @@ opacity: 0.1;
   margin-top: -75px;
 }
 
-.about-me-container{
+.about-me-container {
   display: flex;
 }
 
@@ -117,42 +120,45 @@ opacity: 0.1;
   border-radius: 30px;
   box-shadow: 0px 0px 10px #9985fb;
 }
-.progress-first{
+.progress-first {
   width: 0%;
   height: 100%;
   background-color: var(--color-3);
-  border-radius:30px;
+  border-radius: 30px;
   animation: progress-first 3s linear forwards;
   box-shadow: 0 10px 40px -10px #fff;
 }
 @keyframes progress-first {
-
   100% {
     width: 85%;
   }
 }
-.progress-sec{
+.progress-sec {
   width: 0%;
   height: 100%;
   background-color: var(--color-3);
   border-radius: 30px;
   animation: progress-sec 3s normal forwards;
   box-shadow: 0 10px 40px -10px #fff;
-  transition: 0.4s linear;  
-  transition-property: width; 
+  transition: 0.4s linear;
+  transition-property: width;
 }
-@keyframes progress-sec{
-  from { width: 0 }
-     to   { width: 70% }
+@keyframes progress-sec {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
 }
 .progress-third {
   background-color: var(--color-3);
   height: 100%;
   border-radius: 30px;
-  animation: progress-third  3s linear forwards;
+  animation: progress-third 3s linear forwards;
   box-shadow: 0 10px 40px -10px #fff;
 }
-@keyframes progress-third  {
+@keyframes progress-third {
   0% {
     width: 0;
   }
@@ -164,10 +170,10 @@ opacity: 0.1;
   background-color: var(--color-3);
   height: 100%;
   border-radius: 30px;
-  animation: progress-Fourth  3s linear forwards;
+  animation: progress-Fourth 3s linear forwards;
   box-shadow: 0 10px 40px -10px #fff;
 }
-@keyframes progress-Fourth  {
+@keyframes progress-Fourth {
   0% {
     width: 0;
   }
@@ -179,7 +185,7 @@ opacity: 0.1;
 .gaper-skill {
   height: 50px;
 }
-.skills-about{
+.skills-about {
   margin-bottom: 20%;
 }
 .details {
@@ -196,19 +202,20 @@ opacity: 0.1;
   font-size: 1.2rem;
   font-weight: 300;
 }
-@media screen and (max-width:1200px) {
- .sec{
-  margin-left: 0px;
- }}
+@media screen and (max-width: 1200px) {
+  .sec {
+    margin-left: 0px;
+  }
+}
 @media screen and (min-width: 1000px) {
-  .container{
+  .container {
     margin: auto 5px;
   }
 }
 @media screen and (max-width: 777px) {
   .about-me-container {
     flex-direction: column;
-    align-items: center
+    align-items: center;
   }
   .box-img {
     justify-content: center;
@@ -229,7 +236,7 @@ opacity: 0.1;
   .circle-info-s {
     display: flex;
     align-items: flex-end;
-    margin-block-end:0rem
+    margin-block-end: 0rem;
   }
   .box-info {
     padding: 20px 10px;
@@ -242,5 +249,4 @@ opacity: 0.1;
     padding: 5px;
     margin: 10px;
   }
- 
 }

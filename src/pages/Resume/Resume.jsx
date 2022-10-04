@@ -5,16 +5,14 @@ import { FaGraduationCap } from "react-icons/fa";
 import "./resume.scss";
 import { skillico } from "../../data";
 
-
 export const Resume = () => {
   return (
     <section className="sec">
+      <div className="sec-title">
+        <span className="section-title-op">RESUME</span>
+        <h2 className="section-title">Resume</h2>
+      </div>
       <Container fluid="xl">
-        <div className="sec-title">
-          <span className="section-title-op">RESUME</span>
-          <h2 className="section-title">Resume</h2>
-        </div>
-
         <Row>
           <Col md={6}>
             <div>
@@ -97,21 +95,19 @@ export const Resume = () => {
             </div>
           </Col>
           <div className="about-skill">
-          
-              {skillico.map((item, index) => (
-                <Col bottom="true" key={index + item} md={2} sm={3} xs={3}>
-                  <a
-                    href={item.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="skill-container"
-                  >
-                    {item.icon}
-                    <span>{item.spanText}</span>
-                  </a>
-                </Col>
-              ))}
-              
+            {skillico.map((item, index) => (
+              <Col bottom="true" key={index + item} md={2} sm={3} xs={3}>
+                <a
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="skill-container"
+                >
+                  {item.icon}
+                  <span>{item.spanText}</span>
+                </a>
+              </Col>
+            ))}
           </div>
         </Row>
       </Container>
