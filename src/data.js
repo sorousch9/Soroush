@@ -1,7 +1,6 @@
 import {
   BsGrid,
   BsPersonCheck,
-  BsJournalCheck,
   BsLayers,
   BsChat,
   BsAward,
@@ -17,33 +16,32 @@ export const sideBarMenu = [
   {
     text: "Home",
     icon: <BsGrid className="link-icon" />,
-    url: "/",
+    url: "/home",
+    sec: "#home",
   },
   {
     text: "About",
     icon: <BsPersonCheck className="link-icon" />,
     url: "/about",
+    sec: "#about",
   },
   {
     text: "Resume",
     icon: <BsAward className="link-icon" />,
     url: "/resume",
+    sec: "#resume",
   },
   {
     text: "Works",
     icon: <BsLayers className="link-icon" />,
     url: "/works",
+    sec: "#works",
   },
-  {
-    text: "Projects",
-    icon: <BsJournalCheck className="link-icon" />,
-    url: "/project",
-  },
-
   {
     text: "Contact",
     icon: <BsChat className="link-icon" />,
     url: "/contact",
+    sec: "#contact",
   },
 ];
 export const skillico = [

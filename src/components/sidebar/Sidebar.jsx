@@ -3,12 +3,19 @@ import logo from "../../assets/LOGOw.png";
 import React, { useReducer } from "react";
 import { reducer } from "../../Hooks/useReducer";
 import { Link, NavLink } from "react-router-dom";
-import { sideBarMenu } from "../../data";
 import { BsList,BsX } from "react-icons/bs";
+import {
+  BsGrid,
+  BsPersonCheck,
+  BsLayers,
+  BsChat,
+  BsAward,
+} from "react-icons/bs";
 const defaultOptions = {
   showAside1: false,
   openCloseNav1: false,
 };
+
 
 export const Sidebar = React.memo(() => {
   const [state, dispatch] = useReducer(reducer, defaultOptions);
@@ -30,33 +37,17 @@ export const Sidebar = React.memo(() => {
             className="close-btn"
           />
           <div className="logo">
-            <Link to="/">
+            <Link to="/home">
               <img src={logo} alt="" />
             </Link>
           </div>
-
-          <ul className="links">
-            {sideBarMenu.map((link, index) => {
-              const { text, icon, url } = link;
-              return (
-                <li key={index}>
-                  <NavLink
-                    onClick={() => dispatch({ type: "CLOSE_NAVBAR" })}
-                    className={({ isActive }) => {
-                      return isActive
-                        ? "nav__links active-links"
-                        : "nav__links";
-                    }}
-                    to={url}
-                  >
-                    <div>{icon}</div>
-                    <div>{text}</div>
-                  </NavLink>
-                </li>
-              );
-            })}
-          </ul>
-
+          <nav className="links">
+             <NavLink to="/home" onClick={() => dispatch({ type: "CLOSE_NAVBAR" })}><i><BsGrid/></i>Home</NavLink>
+             <NavLink to="/about" onClick={() => dispatch({ type: "CLOSE_NAVBAR" })}><i><BsPersonCheck/></i>About</NavLink>
+             <NavLink to="/resume" onClick={() => dispatch({ type: "CLOSE_NAVBAR" })}><i><BsAward/></i>Resume</NavLink>
+             <NavLink to="/works" onClick={() => dispatch({ type: "CLOSE_NAVBAR" })}><i><BsLayers/></i>Works</NavLink>
+             <NavLink to="/contact" onClick={() => dispatch({ type: "CLOSE_NAVBAR" })}><i><BsChat/></i>Contact</NavLink>
+          </nav>
           <div className="footer">
             <span>© 2022 Soroush Safarkhah</span>
           </div>

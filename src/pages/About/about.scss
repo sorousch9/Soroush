@@ -118,7 +118,7 @@
   height: 12px;
   background-color: #f1f1f1;
   border-radius: 30px;
-  box-shadow: 0px 0px 10px #9985fb;
+  
 }
 .progress-first {
   width: 0%;
@@ -126,7 +126,7 @@
   background-color: var(--color-3);
   border-radius: 30px;
   animation: progress-first 3s linear forwards;
-  box-shadow: 0 10px 40px -10px #fff;
+ 
 }
 @keyframes progress-first {
   100% {
@@ -139,7 +139,6 @@
   background-color: var(--color-3);
   border-radius: 30px;
   animation: progress-sec 3s normal forwards;
-  box-shadow: 0 10px 40px -10px #fff;
   transition: 0.4s linear;
   transition-property: width;
 }
@@ -156,7 +155,7 @@
   height: 100%;
   border-radius: 30px;
   animation: progress-third 3s linear forwards;
-  box-shadow: 0 10px 40px -10px #fff;
+ 
 }
 @keyframes progress-third {
   0% {
@@ -169,9 +168,8 @@
 .progress-Fourth {
   background-color: var(--color-3);
   height: 100%;
-  border-radius: 30px;
+  border-radius: 20px;
   animation: progress-Fourth 3s linear forwards;
-  box-shadow: 0 10px 40px -10px #fff;
 }
 @keyframes progress-Fourth {
   0% {

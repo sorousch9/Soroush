@@ -8,7 +8,7 @@
   padding: 0;
   box-sizing: border-box;}
   body {
-    background-color: #252439;
+    background-color: #242424;
     margin: 0;
     font-family: 'Rubik', sans-serif;
     color: #EDEDED;
@@ -17,10 +17,10 @@
     font-family: 'Rubik', sans-serif;
   }
   :root {
-    --primaryBG: #252439;
-    --color-btn: #fb503b;
-    --color-2: #ffd15c;
-    --color-3: rgb(39, 228, 171);
+    --primaryBG: #242424;
+    --color-btn: #fb483b;
+    --color-2: #7f47e7;
+    --color-3: #6610f2;
     --color-text: #EDEDED;
 
     

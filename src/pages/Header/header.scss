@@ -6,7 +6,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-left: 230px;
+  animation: fadeIn 2s backwards;
 }
 
 .img {
@@ -120,11 +120,9 @@
 .scroll-down {
   font-size: 1.8rem;
   animation: scroll 2s ease-in alternate-reverse infinite;
-
 }
 .scroll_down:hover .scroll::after {
-  display: block
-
+  display: block;
 }
 
 @keyframes scroll {

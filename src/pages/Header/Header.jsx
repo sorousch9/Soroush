@@ -13,7 +13,8 @@ import { Container } from "react-bootstrap";
 
 export const Header = () => {
   return (
-    <section>
+    <div className="section-header" >
+    <section className="sec" id="home" name="home">
       <Container fluid="xl">
       <div className="header">
         <div className="img">
@@ -50,17 +51,17 @@ export const Header = () => {
             </a>
           </li>
         </ul>
-        <Link to="/contact" className="contact-button">
+        <a href="#contact" className="contact-button">
           <div>
             <span className="bg "></span>
             <span className="base "></span>
             <span className="text">Contact me</span>
           </div>
-        </Link>
-        <Link to="/About" className="scroll" >
+        </a>
+        <a href="#about" className="scroll" >
             <BsFillCaretDownFill className="scroll-down" />
-          </Link>
+          </a>
       </div></Container>
-    </section>
+    </section></div>
   );
 };

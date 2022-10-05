@@ -7,8 +7,8 @@ import Circle from "react-circle";
 
 export const About = () => {
   return (
-    <div className="section-home">
-      <section className="sec" name="about" id="home">
+    <div className="section-about">
+      <section className="sec" name="about" id="about">
         <div className="sec-title">
           <span className="section-title-op">ABOUT</span>
           <h2 className="section-title">About Me</h2>
