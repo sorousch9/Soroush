@@ -1,6 +1,9 @@
 .sec {
   margin-left: 230px;
 }
+.section-about{
+  animation: fadeIn 1s backwards;
+}
 .sec-title {
   margin: 20px 10px 20vh 10px;
 }
@@ -39,6 +42,8 @@
   background-color: #9e9e9e3b;
   border-radius: 21px;
   height: fit-content;
+  animation: fadeInTopRight 1s backwards;
+  
 }
 
 .download-button {
@@ -48,7 +53,7 @@
   max-width: 160px;
   line-height: 50px;
   position: relative;
-  animation: fadeInAnimation 1s 2s backwards;
+  animation: animate__fadeInAnimation 1s 2s backwards;
   white-space: nowrap;
 }
 
@@ -99,12 +104,15 @@
   position: relative;
   padding-right: 15px;
   padding-left: 15px;
+ 
 }
 .info p {
   font-weight: 400;
 }
 .skill-item {
   padding-bottom: 10px;
+  animation: fadeInAnimation 1s 1.8s backwards;
+  
 }
 .text-infos {
   color: var(--color-text);
@@ -185,6 +193,7 @@
 }
 .skills-about {
   margin-bottom: 20%;
+  animation: fadeIn 2s backwards;
 }
 .details {
   display: flex;

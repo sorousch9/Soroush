@@ -28,7 +28,7 @@
 
 .menu-icon,
 .close-btn {
-  position: absolute;
+  position: fixed;
   font-size: 3rem;
   right: 40px;
   top: 40px;
@@ -37,6 +37,8 @@
   display: none;
   transition: all 0.2s linear;
   z-index: 2;
+  background-color: var(--primaryBG);
+  border-radius: 5px;
 }
 .menu-icon:hover {
   transform: translate(5px);
@@ -69,7 +71,7 @@ nav {
   line-height: 2.8;
   list-style: none;
 }
-nav a {
+.navlink{
   transition: all 250ms linear;
   list-style: none;
   text-decoration: none;
@@ -80,7 +82,7 @@ nav a {
   display: flex;
   align-items: center;
 }
-nav i {
+.navlink i {
   margin-left: 10px;
   font-size: 1.4rem;
   margin-right: 20px;
@@ -91,11 +93,11 @@ nav i {
     font-size: 1.8rem;
   }
 }
-nav a:hover{
+.navlink:hover{
   font-size: 1.2rem;
   color: #b9b8b8;
 }
-nav a.active {
+.navlink.active{
   color: var(--color-btn);
   align-items: center;
  font-size: 1.2rem;
@@ -130,15 +132,33 @@ nav a.active {
     justify-content: space-between;
   }
 
-  nav i {
+  .navlink i {
     line-height: 3;
     margin-left: 20px;
     list-style: none;  
     font-size: 2rem;
 
   }
-  nav a {
+  .navlink{
     font-weight: 500;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 786px) {
+  .aside-wrapper {
+    text-align: center;
+    justify-content: space-between;
+  }
+
+  .navlink i {
+    margin-left: 50px;
+    list-style: none;  
+    font-size: 2.8rem;
+
+  }
+  .navlink {
+    margin-top: 25px;
+    font-weight: 500;
+    font-size: 1.7rem;
   }
 }

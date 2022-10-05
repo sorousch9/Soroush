@@ -1,49 +1,11 @@
-import {
-  BsGrid,
-  BsPersonCheck,
-  BsLayers,
-  BsChat,
-  BsAward,
-} from "react-icons/bs";
+
 import { BsBootstrapFill, BsGithub } from "react-icons/bs";
 import { SiSass, SiJquery, SiExpress, SiRedux } from "react-icons/si";
-
 import { AiFillHtml5 } from "react-icons/ai";
 import { DiCss3, DiMongodb } from "react-icons/di";
 import { IoLogoJavascript } from "react-icons/io";
 import { FaNodeJs, FaGit } from "react-icons/fa";
-export const sideBarMenu = [
-  {
-    text: "Home",
-    icon: <BsGrid className="link-icon" />,
-    url: "/home",
-    sec: "#home",
-  },
-  {
-    text: "About",
-    icon: <BsPersonCheck className="link-icon" />,
-    url: "/about",
-    sec: "#about",
-  },
-  {
-    text: "Resume",
-    icon: <BsAward className="link-icon" />,
-    url: "/resume",
-    sec: "#resume",
-  },
-  {
-    text: "Works",
-    icon: <BsLayers className="link-icon" />,
-    url: "/works",
-    sec: "#works",
-  },
-  {
-    text: "Contact",
-    icon: <BsChat className="link-icon" />,
-    url: "/contact",
-    sec: "#contact",
-  },
-];
+
 export const skillico = [
   {
     icon: <SiExpress className="skills-icon" />,

@@ -1,6 +1,5 @@
 import "./header.scss";
 import imgper from "../../assets/person-vec.png";
-
 import {
   BsInstagram,
   BsGithub,
@@ -8,7 +7,6 @@ import {
   BsTwitter,
   BsFillCaretDownFill,
 } from "react-icons/bs";
-import { Link } from "react-router-dom";
 import { Container } from "react-bootstrap";
 
 export const Header = () => {
@@ -31,22 +29,26 @@ export const Header = () => {
 
         <ul className="social-icons">
           <li className="list-inline-item">
-            <a href="/">
+            <a href="/"   target="_blank"
+            rel="noreferrer">
               <BsInstagram />
             </a>
           </li>
           <li className="list-inline-item">
-            <a href="/">
+            <a href="/"   target="_blank"
+            rel="noreferrer">
               <BsGithub />
             </a>
           </li>
           <li className="list-inline-item">
-            <a href="/">
+            <a href="/"   target="_blank"
+            rel="noreferrer">
               <BsTwitter />
             </a>
           </li>
           <li className="list-inline-item">
-            <a href="/">
+            <a href="/"   target="_blank"
+            rel="noreferrer">
               <BsWhatsapp />
             </a>
           </li>

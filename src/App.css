@@ -1,27 +1,31 @@
-@import 'animate.css';
+@import "animate.css";
 
-@import 'bootstrap/dist/css/bootstrap.min.css';
+@import "bootstrap/dist/css/bootstrap.min.css";
 *,
 ::after,
 ::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;}
-  body {
-    background-color: #242424;
-    margin: 0;
-    font-family: 'Rubik', sans-serif;
-    color: #EDEDED;
-  }
-  code {
-    font-family: 'Rubik', sans-serif;
-  }
-  :root {
-    --primaryBG: #242424;
-    --color-btn: #fb483b;
-    --color-2: #7f47e7;
-    --color-3: #6610f2;
-    --color-text: #EDEDED;
-
-    
-  }
+  box-sizing: border-box;
+}
+body {
+  background-color: #242424;
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+  color: #ededed;
+  -webkit-font-smoothing: antialiased;
+ 
+}
+code {
+  font-family: "Rubik", sans-serif;
+}
+:root {
+  --primaryBG: #242424;
+  --color-btn: #fb483b;
+  --color-2: #7f47e7;
+  --color-3: #6610f2;
+  --color-text: #ededed;
+}
+::-webkit-scrollbar{
+  display: none;
+}
