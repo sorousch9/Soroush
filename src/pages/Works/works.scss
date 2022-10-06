@@ -1,73 +1,66 @@
+.section-works {
+  margin: 40px 0px;
+}
 .sec {
   margin-left: 230px;
 }
-.section-works {
-  margin: 30px 0px;
+.works-sec-title {
+  margin-bottom: 40px;
 }
-
-.works-list {
-  list-style: none;
-  margin: 0;
+.works-wrapper{
+  margin-bottom: 60px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 9px 0px rgba(10, 10, 10, 0.5);
 }
-.works-item {
-  margin-top: 70px;
+.works-info {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-}
-
-.project-img {
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 30px;
-  width: 100%;
-}
-
-.works-content {
-  position: absolute;
-  float: left;
-  background-color: rgba(48, 48, 48, 0.747);
   align-items: center;
-  clear: both;
-  border-radius: 0px 20px 20px 0px;
+  h3 {
+    font-weight: 400;
+    padding-top: 10px;
+  }
+  h6 {
+    font-weight: 300;
+  }
 }
-.works-details {
-  float: left;
-  padding: 130px;
+.dependencies-ico {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.dependencies-ico i {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding: 10px 10px;
+  margin: 10px auto;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+.dependencies-ico span {
+  font-size: 2rem;
+}
+.works-img {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+
+  img {
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    transition: transform 0.8s;
+    opacity: 0.9;
+  }
+}
+.img-project:hover {
+  transform: scale(1.1);
 }
 
-.works-category a {
-  margin-bottom: 4px;
-  display: inline-block;
-  text-decoration: none;
-  color: var(--color-2);
-  font-size: 1.2rem;
-  font-weight: 400;
-}
-.works-title span {
-  margin-bottom: 24px;
-  text-decoration: none;
-  color: var(--color-text);
-  font-size: 1.6rem;
-  font-weight: 400;
-}
-.works-view-project a {
-  display: inline-block;
-  text-decoration: none;
-  color: var(--bs-red);
-  font-size: 1rem;
-  font-weight: 400;
-}
 @media screen and (max-width: 1200px) {
   .sec {
     margin-left: 0px;
-  }
-}
-@media screen and (max-width: 780px) {
-  .works-details a {
-    font-size: 0.8rem;
-  }
-  .works-details span {
-    font-size: 1rem;
   }
 }

@@ -1,9 +1,23 @@
-import { Container } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import "./works.scss";
+import { BsBootstrap } from "react-icons/bs";
+import {
+  SiNodemon,
+  SiJsonwebtokens,
+  SiExpress,
+  SiRedux,
+  SiReact,
+  SiReactrouter,
+  SiStyledcomponents,
+  SiMailchimp,
+} from "react-icons/si";
+
+import { DiMongodb } from "react-icons/di";
+import { IoLogoJavascript } from "react-icons/io";
+import { FaSass } from "react-icons/fa";
 import p1 from "../../assets/1.png";
 import p2 from "../../assets/2.png";
 import p3 from "../../assets/3.png";
-import { BsBoxArrowInRight } from "react-icons/bs";
 import ScrollAnimation from "react-animate-on-scroll";
 
 export const Works = () => {
@@ -17,81 +31,189 @@ export const Works = () => {
           </ScrollAnimation>
         </div>
         <Container fluid="xl">
-          <div className="works-list">
-            <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutRight" duration={0.7}>
-              <div className="works-items">
-                <div className="works-item">
-                  <img src={p1} alt="project1" className="project-img" />
-                  <div className="works-content">
-                    <div className="works-details">
-                      <span className="works-category">
-                        <a href="/">Shi Beauty</a>
+          <ScrollAnimation animateIn="fadeInRight" duration={1.5}>
+            <Row className="works-wrapper">
+              <Col md={4}>
+                <div className="works-info">
+                  <h3>Shi beauty</h3>
+                  <h6>React Store Web-App</h6>
+                  <div className="dependencies-ico">
+                    <i>
+                      React
+                      <span>
+                        <SiReact />
                       </span>
-                      <h3 className="works-title">
-                        <span href="/">
-                          Web App Store with<br></br> React and Redux
-                        </span>
-                      </h3>
-                      <span className="works-view-project">
-                        <a href="/">
-                          View Project{" "}
-                          <BsBoxArrowInRight style={{ fontSize: "24px" }} />
-                        </a>
+                    </i>
+                    <i>
+                      Redux
+                      <span>
+                        <SiRedux />
                       </span>
-                    </div>
+                    </i>
+                    <i>
+                      JavaScript
+                      <span>
+                        <IoLogoJavascript />
+                      </span>
+                    </i>
+                    <i>
+                      React Router
+                      <span>
+                        <SiReactrouter />
+                      </span>
+                    </i>
+                    <i>
+                      Bootstrap
+                      <span>
+                        <BsBootstrap />
+                      </span>
+                    </i>
+                    <i>
+                      Styled Component
+                      <span>
+                        <SiStyledcomponents />
+                      </span>
+                    </i>
+                    <i>
+                      Express
+                      <span>
+                        <SiExpress />
+                      </span>
+                    </i>
+                    <i>
+                      Web Tokens
+                      <span>
+                        <SiJsonwebtokens />
+                      </span>
+                    </i>
+                    <i>
+                      Mongo DB
+                      <span>
+                        <DiMongodb />
+                      </span>
+                    </i>
+                    <i>
+                      Nodemon
+                      <span>
+                        <SiNodemon />
+                      </span>
+                    </i>
+                    <i>
+                      Mailchimp
+                      <span>
+                        <SiMailchimp />
+                      </span>
+                    </i>
                   </div>
                 </div>
-              </div>
-            </ScrollAnimation>
-            <ScrollAnimation animateIn="fadeInRight" animateOut="fadeOutLeft" duration={0.7}>
-              <div className="works-items">
-                <div className="works-item">
-                  <img src={p2} alt="project1" className="project-img" />
-                  <div className="works-content">
-                    <div className="works-details">
-                      <span className="works-category">
-                        <a href="/">James Webb</a>
+              </Col>
+              <Col md={8}>
+                <div className="works-img">
+                  <img src={p1} alt="product1" className="img-project" />
+                </div>
+              </Col>
+            </Row>
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeInLeft" duration={1.5}>
+            <Row className="works-wrapper">
+              <Col md={8}>
+                <div className="works-img">
+                  <img src={p2} alt="product1" className="img-project" />
+                </div>
+              </Col>
+              <Col md={4}>
+                <div className="works-info">
+                  <h3>James webb</h3>
+                  <h6>React Portfolio Web-App</h6>
+                  <div className="dependencies-ico">
+                    <i>
+                      React
+                      <span>
+                        <SiReact />
                       </span>
-                      <h3 className="works-title">
-                        <span href="/">
-                          Web Portfolio <br></br> james webb telescope
-                        </span>
-                      </h3>
-                      <span className="works-view-project">
-                        <a href="/">
-                          View Project{" "}
-                          <BsBoxArrowInRight style={{ fontSize: "24px" }} />{" "}
-                        </a>
+                    </i>
+                    <i>
+                      JavaScript
+                      <span>
+                        <IoLogoJavascript />
                       </span>
-                    </div>
+                    </i>
+                    <i>
+                      React Router
+                      <span>
+                        <SiReactrouter />
+                      </span>
+                    </i>
+                    <i>
+                      Bootstrap
+                      <span>
+                        <BsBootstrap />
+                      </span>
+                    </i>
+                    <i>
+                      Mailchimp
+                      <span>
+                        <SiMailchimp />
+                      </span>
+                    </i>
                   </div>
                 </div>
-              </div>
-            </ScrollAnimation>
-            <ScrollAnimation animateIn="fadeInLeft" animateOut="fadeOutRight" duration={0.7}>
-              <div className="works-items">
-                <div className="works-item">
-                  <img src={p3} alt="project1" className="project-img" />
-                  <div className="works-content">
-                    <div className="works-details">
-                      <span className="works-category">
-                        <a href="/">Raw</a>
-                      </span>
-                      <h3 className="works-title">
-                        <span href="/">Web Personal Portfolio </span>
-                      </h3>
-                      <span className="works-view-project">
-                        <a href="/">
-                          View Project{" "}
-                          <BsBoxArrowInRight style={{ fontSize: "24px" }} />{" "}
-                        </a>
-                      </span>
-                    </div>
-                  </div>
+              </Col>
+            </Row>
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeInRight" duration={1.5}>
+          <Row className="works-wrapper">
+            <Col md={4}>
+              <div className="works-info">
+                <h3>Shi beauty</h3>
+                <h6>React Store App</h6>
+                <div className="dependencies-ico">
+                  <i>
+                    React
+                    <span>
+                      <SiReact />
+                    </span>
+                  </i>
+                  <i>
+                    JavaScript
+                    <span>
+                      <IoLogoJavascript />
+                    </span>
+                  </i>
+                  <i>
+                    Sass
+                    <span>
+                      <FaSass />
+                    </span>
+                  </i>
+                  <i>
+                    React Router
+                    <span>
+                      <SiReactrouter />
+                    </span>
+                  </i>
+                  <i>
+                    Bootstrap
+                    <span>
+                      <BsBootstrap />
+                    </span>
+                  </i>
+                  <i>
+                    Mailchimp
+                    <span>
+                      <SiMailchimp />
+                    </span>
+                  </i>
                 </div>
               </div>
-            </ScrollAnimation>
-          </div>
+            </Col>
+            <Col md={8}>
+              <div className="works-img">
+                <img src={p3} alt="product1" className="img-project" />
+              </div>
+            </Col>
+          </Row>
+          </ScrollAnimation>
         </Container>
       </section>
     </div>

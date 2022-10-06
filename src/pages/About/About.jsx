@@ -12,10 +12,7 @@ export const About = () => {
       <section className="sec" name="about" id="about">
         <div className="sec-title">
           <span className="section-title-op">ABOUT</span>
-      <ScrollAnimation
-            animateIn="fadeInRight"
-            duration={4}
-          >
+          <ScrollAnimation animateIn="fadeInRight" duration={4}>
             <h2 className="section-title">About Me</h2>
           </ScrollAnimation>
         </div>
@@ -23,13 +20,13 @@ export const About = () => {
         <Container fluid="xl">
           <ScrollAnimation animateIn="fadeIn">
             <div className="about-me-container">
-              <Col className="img-sec" md={3}>
+              <Row className="img-sec">
                 <div className="box-img">
                   <img src={profile} alt="Soroush Safarkhah" />
                 </div>
                 <div className="gaper-img"> </div>
-              </Col>
-              <Row className="box-info" md={9}>
+              </Row>
+              <Row className="box-info">
                 <Col className="info" md={6}>
                   <p>
                     I'm Soroush Safarkhah, Web and React developer from Karaj,
