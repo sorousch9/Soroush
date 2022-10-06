@@ -3,8 +3,6 @@ import "./about.scss";
 import { Link } from "react-router-dom";
 import profile from "../../assets/person-vec.png";
 import { Col, Container, Row } from "react-bootstrap";
-import Circle from "react-circle";
-import { AnimationOnScroll } from "react-animation-on-scroll";
 
 export const About = () => {
   return (
@@ -15,7 +13,7 @@ export const About = () => {
             <span className="section-title-op">ABOUT</span>
             <h2 className="section-title">About Me</h2>
           </div>
-          <AnimationOnScroll animateIn="animate__bounceInUp">
+         
           <Container fluid="xl">
             <div className="about-me-container">
               <Col className="img-sec" md={3}>
@@ -96,61 +94,28 @@ export const About = () => {
             <div className="skills-about">
               <Row>
                 <Col className="" md={3} sm={6} xs={6}>
+                  
                   <div className="details">
-                    <Circle
-                      progress={90}
-                      animationDuration="3s linear forwards"
-                      size="100"
-                      lineWidth="40"
-                      progressColor="var(--color-3)"
-                      roundedStroke={true}
-                    />
+                    <div className="circle-wrap">
+                      <div className="circle">
+                        <div className="mask full">
+                          <div className="fill"></div>
+                        </div>
+                        <div className="mask half">
+                          <div className="fill"></div>
+                        </div>
+                        <div className="inside-circle"> 85% </div>
+                      </div>
+                    </div>
                     <p className="circle-info">React Js</p>
                   </div>
+                  
                 </Col>
-                <Col className="" md={3} sm={6} xs={6}>
-                  <div className="details">
-                    <Circle
-                      progress={80}
-                      animationDuration="3s linear forwards"
-                      size="100"
-                      lineWidth="40"
-                      progressColor="var(--color-3)"
-                      roundedStroke={true}
-                    />
-                    <p className="circle-info">Node Js </p>
-                  </div>
-                </Col>
-                <Col className="" md={3} sm={6} xs={6}>
-                  <div className="details">
-                    <Circle
-                      progress={85}
-                      animationDuration="3s linear forwards"
-                      size="100"
-                      lineWidth="40"
-                      progressColor="var(--color-3)"
-                      roundedStroke={true}
-                    />
-                    <p className="circle-info">Javascript</p>
-                  </div>
-                </Col>
-                <Col className="" md={3} sm={6} xs={6}>
-                  <div className="details">
-                    <Circle
-                      progress={75}
-                      animationDuration="3s linear forwards"
-                      size="100"
-                      lineWidth="40"
-                      progressColor="var(--color-3)"
-                      roundedStroke={true}
-                    />
-                    <p className="circle-info">Figma </p>
-                  </div>
-                </Col>
+            
               </Row>
             </div>
           </Container>
-          </AnimationOnScroll>
+       
         </section>
       </div>
     

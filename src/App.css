@@ -25,6 +25,10 @@ code {
   --color-2: #7f47e7;
   --color-3: #6610f2;
   --color-text: #ededed;
+  --color-progress-1: rgb(241, 75, 75);
+  --color-progress-2: rgb(128, 103, 240);
+  --color-progress-3: rgb(55, 221, 119);
+  --color-progress-4: rgb(235, 93, 53);
 }
 ::-webkit-scrollbar{
   display: none;
