@@ -1,6 +1,7 @@
 import "./contact.scss";
 import { Col, Container, Form, Row } from "react-bootstrap";
 import bg1 from "../../assets/map-light.png";
+import ScrollAnimation from "react-animate-on-scroll";
 
 export const Contact = () => {
   return (
@@ -8,18 +9,22 @@ export const Contact = () => {
       <section id="contact" name="contact" className="sec">
         <div className="sec-title">
           <span className="section-title-op">Get in Touch</span>
-          <h2 className="section-title">Contact</h2>
+          <ScrollAnimation animateIn="fadeInRight" duration={4}>
+            <h2 className="section-title">Contact</h2>
+          </ScrollAnimation>
         </div>
         <Container fluid="xl">
           <Row>
             <Col md="4">
-              <div className="contact-info">
-                <img src={bg1} alt="background contact" />
-                <h3>Let's talk about everything!</h3>
-              </div>
-              <div>
-                <p>Did you want to talk to me ? send me an Email. 👋</p>
-              </div>
+              <ScrollAnimation animateIn="fadeIn">
+                <div className="contact-info">
+                  <img src={bg1} alt="background contact" />
+                  <h3>Let's talk about everything!</h3>
+                </div>
+                <div>
+                  <p>Did you want to talk to me ? send me an Email. 👋</p>
+                </div>
+              </ScrollAnimation>
             </Col>
             <Col md="8">
               <Form mt="6">

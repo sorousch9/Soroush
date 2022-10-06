@@ -11,6 +11,7 @@
     "bootstrap-icons": "^1.9.1",
     "react": "^18.2.0",
     "react-addons-css-transition-group": "^15.6.2",
+    "react-animate-on-scroll": "^2.1.5",
     "react-animate.css": "^0.0.4",
     "react-animation-on-scroll": "^5.1.0",
     "react-bootstrap": "^2.5.0",

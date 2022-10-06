@@ -1,8 +1,11 @@
 .section-resume{
-  margin-bottom: 20vh;
+  margin-bottom: 10vh;
 }
 .sec {
   margin-left: 230px;
+}
+.resume-sec-title{
+  margin: 20px 10px 5vh 10px;
 }
 .resume-wrapper {
   border-left: 3px solid #b1b1b1;
@@ -63,7 +66,7 @@
 .about-skill {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 1px;
+  margin-top: 50px;
   opacity: 0.6;
 }
 .skill-container {
@@ -71,7 +74,7 @@
   text-decoration: none;
   margin: 10px 10px;
   border-radius: 15px;
-  box-shadow: 0 0 15px 0px #0808084c;
+  box-shadow: 0 0 15px 0px #5353534c;
   position: relative;
   display: grid;
   place-items: center;

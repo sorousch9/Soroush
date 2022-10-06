@@ -20,12 +20,16 @@
 .form-group {
   margin: 10px 5px;
   border-radius: 20px;
+  
 }
 .form-control-input {
   width: 100%;
   padding: 10px;
   border: none;
   border-radius: 12px;
+  background-color: rgb(51, 51, 51);
+  box-shadow: 0px 0px 2px 0px white;
+
 }
 .form-control-textarea {
     border: none;
@@ -33,10 +37,12 @@
   width: 100%;
   height: 20vh;
   border-radius: 20px;
+  background-color: rgb(51, 51, 51);
+  box-shadow: 0px 0px 2px 0px white;
 }
 .btn-contact {
-  color: #fff;
-  background: var(--color-btn);
+  color: rgb(235, 235, 235);
+  background: #af3131;
   position: relative;
   transform: perspective(1px) translateZ(0);
   border: none;

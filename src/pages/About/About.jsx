@@ -3,18 +3,25 @@ import "./about.scss";
 import { Link } from "react-router-dom";
 import profile from "../../assets/person-vec.png";
 import { Col, Container, Row } from "react-bootstrap";
+import Circle from "react-circle";
+import ScrollAnimation from "react-animate-on-scroll";
 
 export const About = () => {
   return (
-    
-      <div className="section-about">
-        <section className="sec" name="about" id="about">
-          <div className="sec-title">
-            <span className="section-title-op">ABOUT</span>
+    <div className="section-about">
+      <section className="sec" name="about" id="about">
+        <div className="sec-title">
+          <span className="section-title-op">ABOUT</span>
+      <ScrollAnimation
+            animateIn="fadeInRight"
+            duration={4}
+          >
             <h2 className="section-title">About Me</h2>
-          </div>
-         
-          <Container fluid="xl">
+          </ScrollAnimation>
+        </div>
+
+        <Container fluid="xl">
+          <ScrollAnimation animateIn="fadeIn">
             <div className="about-me-container">
               <Col className="img-sec" md={3}>
                 <div className="box-img">
@@ -46,7 +53,7 @@ export const About = () => {
                   <div className="progress-wrapper">
                     <div className="skill-item">
                       <div className="skill-info">
-                        <h4 className="text-infos">UI/Ux Design</h4>
+                        <h4 className="text-infos">UI/UX Design</h4>
                         <span className="pro">85%</span>
                       </div>
                       <div className="progress-bar">
@@ -79,8 +86,8 @@ export const About = () => {
                   <div className="progress-wrapper">
                     <div className="skill-item">
                       <div className="skill-info">
-                        <h4 className="text-infos">App Development</h4>
-                        <span className="pro">75%</span>
+                        <h4 className="text-infos">Wordpress</h4>
+                        <span className="pro">90%</span>
                       </div>
                       <div className="progress-bar">
                         <div className="progress-Fourth "></div>
@@ -90,34 +97,96 @@ export const About = () => {
                 </Col>
               </Row>
             </div>
-            <div className="gaper-skill"></div>
+          </ScrollAnimation>
+          <div className="gaper-skill"></div>
+          <ScrollAnimation animateIn="headShake" duration={4}>
             <div className="skills-about">
               <Row>
                 <Col className="" md={3} sm={6} xs={6}>
-                  
                   <div className="details">
-                    <div className="circle-wrap">
-                      <div className="circle">
-                        <div className="mask full">
-                          <div className="fill"></div>
-                        </div>
-                        <div className="mask half">
-                          <div className="fill"></div>
-                        </div>
-                        <div className="inside-circle"> 85% </div>
-                      </div>
-                    </div>
-                    <p className="circle-info">React Js</p>
+                    <Circle
+                      progress={90}
+                      animate={true}
+                      animationDuration="2s"
+                      bgColor="#6d6d6d"
+                      size="100"
+                      lineWidth="20"
+                      textColor="#8d8d8d"
+                      progressColor="var(--color-progress-4)"
+                      roundedStroke={true}
+                      textStyle={{
+                        font: "300 5rem Rubik",
+                      }}
+                      percentSpacing={1}
+                    />
+                    <p className="circle-info">React Js </p>
                   </div>
-                  
                 </Col>
-            
+                <Col className="" md={3} sm={6} xs={6}>
+                  <div className="details">
+                    <Circle
+                      progress={80}
+                      animate={true}
+                      animationDuration="2s"
+                      bgColor="#6d6d6d"
+                      size="100"
+                      lineWidth="20"
+                      textColor="#8d8d8d"
+                      progressColor="var(--color-progress-4)"
+                      roundedStroke={true}
+                      textStyle={{
+                        font: "300 5rem Rubik",
+                      }}
+                      percentSpacing={1}
+                    />
+                    <p className="circle-info">Node Js </p>
+                  </div>
+                </Col>
+                <Col className="" md={3} sm={6} xs={6}>
+                  <div className="details">
+                    <Circle
+                      progress={85}
+                      animate={true}
+                      animationDuration="2s"
+                      bgColor="#6d6d6d"
+                      size="100"
+                      lineWidth="20"
+                      textColor="#8d8d8d"
+                      progressColor="var(--color-progress-4)"
+                      roundedStroke={true}
+                      textStyle={{
+                        font: "300 5rem Rubik",
+                      }}
+                      percentSpacing={1}
+                    />
+                    <p className="circle-info">Javascript</p>
+                  </div>
+                </Col>
+                <Col className="" md={3} sm={6} xs={6}>
+                  <div className="details">
+                    <Circle
+                      progress={75}
+                      animate={true}
+                      animationDuration="2s"
+                      bgColor="#6d6d6d"
+                      size="100"
+                      lineWidth="20"
+                      textColor="#8d8d8d"
+                      progressColor="var(--color-progress-4)"
+                      roundedStroke={true}
+                      textStyle={{
+                        font: "300 5rem Rubik",
+                      }}
+                      percentSpacing={1}
+                    />
+                    <p className="circle-info">Figma </p>
+                  </div>
+                </Col>
               </Row>
             </div>
-          </Container>
-       
-        </section>
-      </div>
-    
+          </ScrollAnimation>
+        </Container>
+      </section>
+    </div>
   );
 };
