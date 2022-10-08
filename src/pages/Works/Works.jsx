@@ -9,7 +9,7 @@ import {
   SiReact,
   SiReactrouter,
   SiStyledcomponents,
-  SiMailchimp,
+  SiMailchimp,SiMinutemailer
 } from "react-icons/si";
 
 import { DiMongodb } from "react-icons/di";
@@ -99,9 +99,9 @@ export const Works = () => {
                       </span>
                     </i>
                     <i>
-                      Mailchimp
+                      Mailgun
                       <span>
-                        <SiMailchimp />
+                        <SiMinutemailer />
                       </span>
                     </i>
                   </div>
