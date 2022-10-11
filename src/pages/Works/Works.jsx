@@ -34,7 +34,7 @@ export const Works = () => {
           <ScrollAnimation animateIn="fadeInRight" duration={1.5}>
             <Row className="works-wrapper">
               <Col md={4}>
-                <div className="works-info">
+                <a href="https://github.com/sorousch9/shi-beauty" rel="noreferrer" target="_blank" className="works-info">
                   <h3>Shi beauty</h3>
                   <h6>React Store Web-App</h6>
                   <div className="dependencies-ico">
@@ -105,7 +105,7 @@ export const Works = () => {
                       </span>
                     </i>
                   </div>
-                </div>
+                </a>
               </Col>
               <Col md={8}>
                 <div className="works-img">
@@ -122,7 +122,7 @@ export const Works = () => {
                 </div>
               </Col>
               <Col md={4}>
-                <div className="works-info">
+                <a href="https://raw1.netlify.app" rel="noreferrer" target="_blank" className="works-info">
                   <h3>James webb</h3>
                   <h6>React Portfolio Web-App</h6>
                   <div className="dependencies-ico">
@@ -157,14 +157,14 @@ export const Works = () => {
                       </span>
                     </i>
                   </div>
-                </div>
+                </a>
               </Col>
             </Row>
           </ScrollAnimation>
           <ScrollAnimation animateIn="fadeInRight" duration={1.5}>
           <Row className="works-wrapper">
             <Col md={4}>
-              <div className="works-info">
+              <div className="works-info" href="https://github.com/sorousch9/portfolio" rel="noreferrer" target="_blank">
                 <h3>Shi beauty</h3>
                 <h6>React Store App</h6>
                 <div className="dependencies-ico">
