@@ -1,0 +1,17 @@
+.notfound {
+    margin-top: 45vh;
+    margin-left: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    span{
+        font-size: 3rem;
+        color: aqua;
+        animation: scroll 3s ease-in alternate-reverse infinite;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .notfound {
+      margin-left: 0px;
+    }
+  }
