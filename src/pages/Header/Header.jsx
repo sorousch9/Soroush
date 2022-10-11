@@ -6,8 +6,11 @@ import {
   BsWhatsapp,
   BsTwitter,
   BsFillCaretDownFill,
+  BsLinkedin
 } from "react-icons/bs";
 import { Container } from "react-bootstrap";
+import Typed from "react-typed";
+
 
 export const Header = () => {
   return (
@@ -19,37 +22,52 @@ export const Header = () => {
           <img src={imgper} alt="my vector" />
         </div>
         <div className="name">
-          <h1>Soroush Safarkhah</h1>
+          <h1>Hi, I'm Soroush Safarkhah</h1>
         </div>
         <div className="desc">
           <p>
-            I'm a <span>React Web Developer</span>{" "}
+            I'm a  <Typed
+                strings={[
+                    'Front-End developer',
+                    'React developer',
+                    'Photography lover']}
+                    typeSpeed={100}
+                    backSpeed={20}
+                    loop >
+                    <span type="text"/>
+                </Typed>
           </p>
         </div>
 
         <ul className="social-icons">
           <li className="list-inline-item">
-            <a href="/"   target="_blank"
+            <a href="https://www.instagram.com/soroush_raw"   target="_blank"
             rel="noreferrer">
               <BsInstagram />
             </a>
           </li>
           <li className="list-inline-item">
-            <a href="/"   target="_blank"
+            <a href="https://github.com/sorousch9"   target="_blank"
             rel="noreferrer">
               <BsGithub />
             </a>
           </li>
           <li className="list-inline-item">
-            <a href="/"   target="_blank"
+            <a href="https://twitter.com/soroush_raw"   target="_blank"
             rel="noreferrer">
               <BsTwitter />
             </a>
           </li>
           <li className="list-inline-item">
-            <a href="/"   target="_blank"
+            <a href="https://wa.me/4917655760250"   target="_blank"
             rel="noreferrer">
               <BsWhatsapp />
+            </a>
+          </li>
+          <li className="list-inline-item">
+            <a href="https://www.linkedin.com/in/soroush9/"   target="_blank"
+            rel="noreferrer">
+              <BsLinkedin />
             </a>
           </li>
         </ul>

@@ -37,7 +37,7 @@ export const Sidebar = React.memo(() => {
             className="close-btn"
           />
           <div className="logo">
-            <Link to="/">
+            <Link to="/safarkhah">
               <img src={logo} alt="" />
             </Link>
           </div>

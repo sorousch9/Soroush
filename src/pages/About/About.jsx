@@ -1,10 +1,10 @@
 import React from "react";
 import "./about.scss";
-import { Link } from "react-router-dom";
 import profile from "../../assets/person-vec.png";
 import { Col, Container, Row } from "react-bootstrap";
 import Circle from "react-circle";
 import ScrollAnimation from "react-animate-on-scroll";
+import cv from "../../assets/cv.pdf"
 
 export const About = () => {
   return (
@@ -36,13 +36,13 @@ export const About = () => {
                     at Wordpress too.
                   </p>
 
-                  <Link to="/#" className="download-button">
+                  <a href={cv}  target={"_blank"} rel="noreferrer" className="download-button">
                     <div>
                       <span className="bg "></span>
                       <span className="base "></span>
                       <span className="text">Download CV</span>
                     </div>
-                  </Link>
+                  </a>
 
                   <div className="gaper-img"></div>
                 </Col>
