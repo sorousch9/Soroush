@@ -37,7 +37,7 @@ export const Sidebar = React.memo(() => {
             className="close-btn"
           />
           <div className="logo">
-            <Link to="/safarkhah">
+            <Link to="/">
               <img src={logo} alt="" />
             </Link>
           </div>
@@ -85,7 +85,7 @@ export const Sidebar = React.memo(() => {
                 <BsLayers />
               </i>
               Works
-            </Nav.Link>
+            </Nav.Link>slideInLeft
             <Nav.Link
               eventKey="link-5"
               className="navlink"
@@ -99,7 +99,7 @@ export const Sidebar = React.memo(() => {
             </Nav.Link>
           </Nav>
           <div className="footer">
-            <span>© 2022 Soroush Safarkhah</span>
+            <span> © 2022 Soroush Safarkhah</span>
           </div>
         </div>
       </aside>

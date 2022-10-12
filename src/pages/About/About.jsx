@@ -12,7 +12,7 @@ export const About = () => {
       <section className="sec" name="about" id="about">
         <div className="sec-title">
           <span className="section-title-op">ABOUT</span>
-          <ScrollAnimation animateIn="fadeInRight" duration={4}>
+          <ScrollAnimation animateIn="swing" duration={1.5}>
             <h2 className="section-title">About Me</h2>
           </ScrollAnimation>
         </div>

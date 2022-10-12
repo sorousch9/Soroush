@@ -13,8 +13,7 @@ export const Resume = () => {
         <div className="resume-sec-title">
           <span className="section-title-op">RESUME</span>
       <ScrollAnimation
-            animateIn="fadeInRight"
-            duration={4}
+            animateIn="swing" duration={1.5}
           >
           <h2 className="section-title">Resume</h2>
         </ScrollAnimation>

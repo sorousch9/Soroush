@@ -26,12 +26,12 @@ export const Works = () => {
       <section id="works" name="works" className="sec">
         <div className="works-sec-title">
           <span className="section-title-op">WORKS</span>
-          <ScrollAnimation animateIn="fadeInRight" duration={4}>
+          <ScrollAnimation animateIn="swing" duration={1.5}>
             <h2 className="section-title">My Amazing Works</h2>
           </ScrollAnimation>
         </div>
         <Container fluid="xl">
-          <ScrollAnimation animateIn="fadeInRight" duration={1.5}>
+        <ScrollAnimation animateIn="fadeInLeft" animateOut="zoomOut" duration={1.5}>
             <Row className="works-wrapper">
               <Col md={4}>
                 <a href="https://github.com/sorousch9/shi-beauty" rel="noreferrer" target="_blank" className="works-info">
@@ -114,7 +114,7 @@ export const Works = () => {
               </Col>
             </Row>
           </ScrollAnimation>
-          <ScrollAnimation animateIn="fadeInLeft" duration={1.5}>
+          <ScrollAnimation animateIn="fadeInRight" animateOut="zoomOut" duration={1.5}>
             <Row className="works-wrapper">
               <Col md={8}>
                 <div className="works-img">
@@ -161,7 +161,7 @@ export const Works = () => {
               </Col>
             </Row>
           </ScrollAnimation>
-          <ScrollAnimation animateIn="fadeInRight" duration={1.5}>
+          <ScrollAnimation animateIn="fadeInLeft" animateOut="zoomOut" duration={1.5}>
           <Row className="works-wrapper">
             <Col md={4}>
               <a className="works-info" href="https://github.com/sorousch9/portfolio" rel="noreferrer" target="_blank">

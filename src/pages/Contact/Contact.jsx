@@ -44,7 +44,7 @@ export const Contact = () => {
       <section id="contact" name="contact" className="sec">
         <div className="sec-title">
           <span className="section-title-op">Get in Touch</span>
-          <ScrollAnimation animateIn="fadeInRight" duration={4}>
+          <ScrollAnimation animateIn="swing" duration={1.5}>
             <h2 className="section-title">Contact</h2>
           </ScrollAnimation>
         </div>
