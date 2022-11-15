@@ -9,7 +9,9 @@ import {
   SiReact,
   SiReactrouter,
   SiStyledcomponents,
-  SiMailchimp,SiMinutemailer
+  SiMailchimp,
+  SiMinutemailer,
+  SiSwiper
 } from "react-icons/si";
 
 import { DiMongodb } from "react-icons/di";
@@ -31,10 +33,19 @@ export const Works = () => {
           </ScrollAnimation>
         </div>
         <Container fluid="xl">
-        <ScrollAnimation animateIn="fadeInLeft" animateOut="zoomOut" duration={1.5}>
+          <ScrollAnimation
+            animateIn="fadeInLeft"
+            animateOut="zoomOut"
+            duration={1.5}
+          >
             <Row className="works-wrapper">
               <Col md={4}>
-                <a href="https://github.com/sorousch9/shi-beauty" rel="noreferrer" target="_blank" className="works-info">
+                <a
+                  href="https://github.com/sorousch9/shi-beauty"
+                  rel="noreferrer"
+                  target="_blank"
+                  className="works-info"
+                >
                   <h3>Shi beauty</h3>
                   <h6>React Store Web-App</h6>
                   <div className="dependencies-ico">
@@ -114,7 +125,11 @@ export const Works = () => {
               </Col>
             </Row>
           </ScrollAnimation>
-          <ScrollAnimation animateIn="fadeInRight" animateOut="zoomOut" duration={1.5}>
+          <ScrollAnimation
+            animateIn="fadeInRight"
+            animateOut="zoomOut"
+            duration={1.5}
+          >
             <Row className="works-wrapper">
               <Col md={8}>
                 <div className="works-img">
@@ -122,7 +137,12 @@ export const Works = () => {
                 </div>
               </Col>
               <Col md={4}>
-                <a href="https://raw1.netlify.app" rel="noreferrer" target="_blank" className="works-info">
+                <a
+                  href="https://raw1.netlify.app"
+                  rel="noreferrer"
+                  target="_blank"
+                  className="works-info"
+                >
                   <h3>James webb</h3>
                   <h6>React Portfolio Web-App</h6>
                   <div className="dependencies-ico">
@@ -150,10 +170,11 @@ export const Works = () => {
                         <BsBootstrap />
                       </span>
                     </i>
+
                     <i>
-                      Mailchimp
+                      Redux
                       <span>
-                        <SiMailchimp />
+                        <SiRedux />
                       </span>
                     </i>
                   </div>
@@ -161,58 +182,92 @@ export const Works = () => {
               </Col>
             </Row>
           </ScrollAnimation>
-          <ScrollAnimation animateIn="fadeInLeft" animateOut="zoomOut" duration={1.5}>
-          <Row className="works-wrapper">
-            <Col md={4}>
-              <a className="works-info" href="https://github.com/sorousch9/portfolio" rel="noreferrer" target="_blank">
-                <h3>Portfolio</h3>
-                <h6>React Portfolio App</h6>
-                <div className="dependencies-ico">
-                  <i>
-                    React
-                    <span>
-                      <SiReact />
-                    </span>
-                  </i>
-                  <i>
-                    JavaScript
-                    <span>
-                      <IoLogoJavascript />
-                    </span>
-                  </i>
-                  <i>
-                    Sass
-                    <span>
-                      <FaSass />
-                    </span>
-                  </i>
-                  <i>
-                    React Router
-                    <span>
-                      <SiReactrouter />
-                    </span>
-                  </i>
-                  <i>
-                    Bootstrap
-                    <span>
-                      <BsBootstrap />
-                    </span>
-                  </i>
-                  <i>
-                    Mailchimp
-                    <span>
-                      <SiMailchimp />
-                    </span>
-                  </i>
+          <ScrollAnimation
+            animateIn="fadeInLeft"
+            animateOut="zoomOut"
+            duration={1.5}
+          >
+            <Row className="works-wrapper">
+              <Col md={4}>
+                <a
+                  className="works-info"
+                  href="https://github.com/sorousch9/Bueromarkt"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <h3>Bötcher AG store</h3>
+                  <h6>React Store Web-App</h6>
+                  <div className="dependencies-ico">
+                    <i>
+                      React
+                      <span>
+                        <SiReact />
+                      </span>
+                    </i>
+                    <i>
+                      JavaScript
+                      <span>
+                        <IoLogoJavascript />
+                      </span>
+                    </i>
+                    <i>
+                      Sass
+                      <span>
+                        <FaSass />
+                      </span>
+                    </i>
+                    <i>
+                      React Router
+                      <span>
+                        <SiReactrouter />
+                      </span>
+                    </i>
+                    <i>
+                      Swiper
+                      <span>
+                        <SiSwiper />
+                      </span>
+                    </i>
+                    <i>
+                      Bootstrap
+                      <span>
+                        <BsBootstrap />
+                      </span>
+                    </i>
+                    <i>
+                      Mailchimp
+                      <span>
+                        <SiMailchimp />
+                      </span>
+                    </i>
+                    <i>
+                      Express
+                      <span>
+                        <SiExpress />
+                      </span>
+                    </i>
+            
+                    <i>
+                      Mongo DB
+                      <span>
+                        <DiMongodb />
+                      </span>
+                    </i>
+                    <i>
+                      Nodemon
+                      <span>
+                        <SiNodemon />
+                      </span>
+                    </i>
+                  </div>
+                </a>
+              </Col>
+              <Col md={8}>
+                <div className="works-img">
+                  <img src={p3} alt="" className="Bötcher AG store" />
                 </div>
-              </a>
-            </Col>
-            <Col md={8}>
-              <div className="works-img">
-                <img src={p3} alt="product1" className="img-project" />
-              </div>
-            </Col>
-          </Row>
+              </Col>
+            </Row>
           </ScrollAnimation>
         </Container>
       </section>
