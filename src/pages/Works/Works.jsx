@@ -4,7 +4,7 @@ import { BsBootstrap } from "react-icons/bs";
 import {
   SiNodemon,
   SiJsonwebtokens,
-  SiTypescript,
+  SiExpress,
   SiRedux,
   SiReact,
   SiReactrouter,
@@ -86,9 +86,9 @@ export const Works = () => {
                       </span>
                     </i>
                     <i>
-                      TypeScript
+                      Express
                       <span>
-                        <SiTypescript />
+                        <SiExpress />
                       </span>
                     </i>
                     <i>
@@ -241,9 +241,9 @@ export const Works = () => {
                       </span>
                     </i>
                     <i>
-                      TypeScript
+                      Express
                       <span>
-                        <SiTypescript />
+                        <SiExpress />
                       </span>
                     </i>
             
