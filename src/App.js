@@ -13,14 +13,12 @@ function App() {
     <BrowserRouter>
       <Sidebar />
       <Routes>
-        <Route path="/">
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/resume" element={<Resume />} />
-          <Route path="/works" element={<Works />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<NotFound/>} />
-        </Route>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/resume" element={<Resume />} />
+        <Route path="/works" element={<Works />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="*" exact element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );

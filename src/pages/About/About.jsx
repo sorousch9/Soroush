@@ -122,7 +122,7 @@ export const About = () => {
                 <Col className="" md={3} sm={6} xs={6}>
                   <div className="details">
                     <Circle
-                      progress={80}
+                      progress={85}
                       animate={true}
                       animationDuration="2s"
                       bgColor="#6d6d6d"
@@ -136,7 +136,7 @@ export const About = () => {
                       }}
                       percentSpacing={1}
                     />
-                    <p className="circle-info">Node Js </p>
+                    <p className="circle-info">TypeScript </p>
                   </div>
                 </Col>
                 <Col className="" md={3} sm={6} xs={6}>

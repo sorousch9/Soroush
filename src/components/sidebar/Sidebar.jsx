@@ -2,7 +2,7 @@ import "./sidebar.scss";
 import logo from "../../assets/LOGOw.png";
 import React, { useReducer } from "react";
 import { reducer } from "../../Hooks/useReducer";
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import { BsList, BsX } from "react-icons/bs";
 import {
   BsGrid,
@@ -54,6 +54,7 @@ export const Sidebar = React.memo(() => {
               Home
             </Nav.Link>
             <Nav.Link
+              
               eventKey="link-2"
               className="navlink"
               href="#about"
@@ -85,7 +86,7 @@ export const Sidebar = React.memo(() => {
                 <BsLayers />
               </i>
               Works
-            </Nav.Link>slideInLeft
+            </Nav.Link>
             <Nav.Link
               eventKey="link-5"
               className="navlink"
