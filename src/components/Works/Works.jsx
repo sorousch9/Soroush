@@ -123,7 +123,7 @@ export const Works = () => {
                       alt="First slide"
                     />
                     <Carousel.Caption>
-                      <h4 >First slide label</h4>
+                      <h4 >Home Page</h4>
                     </Carousel.Caption>
                   </Carousel.Item>
                   <Carousel.Item >
@@ -133,7 +133,7 @@ export const Works = () => {
                       alt="Second slide"
                     />
                     <Carousel.Caption>
-                      <h4>Second slide label</h4>
+                      <h4>Single Product pPage</h4>
                     </Carousel.Caption>
                   </Carousel.Item>
                   <Carousel.Item>
@@ -143,7 +143,7 @@ export const Works = () => {
                       alt="Third slide"
                     />
                     <Carousel.Caption>
-                      <h4>Third slide label</h4>
+                      <h4>Cart Page</h4>
                     </Carousel.Caption>
                   </Carousel.Item>
                 </Carousel>
@@ -244,7 +244,7 @@ export const Works = () => {
                       alt="First slide"
                     />
                     <Carousel.Caption>
-                      <h4 >First slide label</h4>
+                      <h4 >Home Page</h4>
                     </Carousel.Caption>
                   </Carousel.Item>
                   <Carousel.Item >
@@ -254,7 +254,7 @@ export const Works = () => {
                       alt="Second slide"
                     />
                     <Carousel.Caption>
-                      <h4>Second slide label</h4>
+                      <h4>Cart Page</h4>
                     </Carousel.Caption>
                   </Carousel.Item>
                   <Carousel.Item>
@@ -264,7 +264,7 @@ export const Works = () => {
                       alt="Third slide"
                     />
                     <Carousel.Caption>
-                      <h4>Third slide label</h4>
+                      <h4>Register Page</h4>
                     </Carousel.Caption>
                   </Carousel.Item>
                 </Carousel>
@@ -329,9 +329,7 @@ export const Works = () => {
                       src={web1}
                       alt="First slide"
                     />
-                    <Carousel.Caption>
-                      <h4 >First slide label</h4>
-                    </Carousel.Caption>
+            
                   </Carousel.Item>
                   <Carousel.Item >
                     <Image rounded
@@ -339,9 +337,7 @@ export const Works = () => {
                       src={web2}
                       alt="Second slide"
                     />
-                    <Carousel.Caption>
-                      <h4>Second slide label</h4>
-                    </Carousel.Caption>
+                   
                   </Carousel.Item>
                   <Carousel.Item>
                     <Image rounded
@@ -349,9 +345,7 @@ export const Works = () => {
                       src={web3}
                       alt="Third slide"
                     />
-                    <Carousel.Caption>
-                      <h4>Third slide label</h4>
-                    </Carousel.Caption>
+                  
                   </Carousel.Item>
                 </Carousel>
               </Col>
