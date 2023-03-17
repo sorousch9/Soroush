@@ -1,12 +1,12 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import "./App.css";
+import "./App.scss";
 import { Sidebar } from "./components/sidebar/Sidebar";
-import { About } from "./pages/About/About";
-import { Resume } from "./pages/Resume/Resume";
+import { About } from "./components/About/About";
+import { Resume } from "./components/Resume/Resume";
 import { Home } from "./pages/home/Home";
-import { Works } from "./pages/Works/Works";
-import { Contact } from "./pages/Contact/Contact";
-import { NotFound } from "./pages/notFound/NotFound";
+import { Works } from "./components/Works/Works";
+import { Contact } from "./components/Contact/Contact";
+import { NotFound } from "./components/notFound/NotFound";
 
 function App() {
   return (
