@@ -230,7 +230,7 @@ export const Works = () => {
                 </a>
               </Col>
               <Col md={8}>
-              <Carousel variant="dark" indicators={false}>
+                <Carousel variant="dark" indicators={false}>
                   <Carousel.Item>
                     <Image rounded
                       className="d-block w-100"
@@ -316,7 +316,7 @@ export const Works = () => {
                 </a>
               </Col>
               <Col md={8}>
-              <Carousel variant="dark" indicators={false}>
+                <Carousel variant="dark" indicators={false}>
                   <Carousel.Item>
                     <Image rounded
                       className="d-block w-100"
