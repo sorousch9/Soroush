@@ -13,7 +13,7 @@ import {
   SiSwiper,
   SiTypescript
 } from "react-icons/si";
-
+import { TbApi } from "react-icons/tb";
 import { DiMongodb } from "react-icons/di";
 import { IoLogoJavascript } from "react-icons/io";
 import { FaSass } from "react-icons/fa";
@@ -64,7 +64,7 @@ export const Works = () => {
                       </span>
                     </i>
                     <i>
-                      React
+                      React JS
                       <span>
                         <SiReact />
                       </span>
@@ -82,7 +82,7 @@ export const Works = () => {
                       </span>
                     </i>
                     <i>
-                      React Router
+                      React Router 
                       <span>
                         <SiReactrouter />
                       </span>
@@ -94,7 +94,7 @@ export const Works = () => {
                       </span>
                     </i>
                     <i>
-                      Bootstrap
+                      Bootstrap 
                       <span>
                         <BsBootstrap />
                       </span>
@@ -103,6 +103,12 @@ export const Works = () => {
                       Mongo DB
                       <span>
                         <DiMongodb />
+                      </span>
+                    </i>
+                    <i>
+                      Rest Api
+                      <span>
+                        <TbApi />
                       </span>
                     </i>
                   </div>
@@ -158,7 +164,7 @@ export const Works = () => {
                   className="works-info"
                 >
                   <h3>Shi beauty</h3>
-                  <h6>React Store Web-App</h6>
+                  <h6>This is a React-based project that incorporates Redux, React Router, Bootstrap, and Styled Component libraries to build a dynamic and responsive user interface. Additionally, the project utilizes web tokens for secure authentication and integrates with a Mongo DB database to store and retrieve data.</h6>
                   <div className="dependencies-ico">
                     <i>
                       React
@@ -278,8 +284,8 @@ export const Works = () => {
                   rel="noreferrer"
                   className="works-info"
                 >
-                  <h3>James webb</h3>
-                  <h6>React Portfolio Web-App</h6>
+                  <h3>James webb Portfolio</h3>
+                  <h6>This website was created using React, React Router, and Bootstrap to showcase my skills and projects to potential employers and clients.</h6>
                   <div className="dependencies-ico">
                     <i>
                       React
