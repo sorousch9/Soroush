@@ -6,7 +6,6 @@ import { Resume } from "./components/Resume/Resume";
 import { Home } from "./pages/home/Home";
 import { Works } from "./components/Works/Works";
 import { Contact } from "./components/Contact/Contact";
-import { NotFound } from "./components/notFound/NotFound";
 
 function App() {
   return (
