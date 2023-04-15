@@ -4,7 +4,6 @@ import profile from "../../assets/person-vec.png";
 import { Col, Container, Row } from "react-bootstrap";
 import Circle from "react-circle";
 import ScrollAnimation from "react-animate-on-scroll";
-import cv from "../../assets/cv.pdf"
 
 export const About = () => {
   return (
@@ -29,21 +28,10 @@ export const About = () => {
               <Row className="box-info">
                 <Col className="info" md={6}>
                   <p>
-                    I'm Soroush Safarkhah, Web and React developer from Karaj,
-                    Iran, living in Germany. I have rich experience in designing
-                    and creating websites and Customization with React and
-                    Bootstrap,besides I have good knowledge of backend and good
-                    at Wordpress too.
-                  </p>
-
-                  <a href={cv}  target={"_blank"} rel="noreferrer" className="download-button">
-                    <div>
-                      <span className="bg "></span>
-                      <span className="base "></span>
-                      <span className="text">Download CV</span>
-                    </div>
-                  </a>
-
+                    I am a Javascript and React developer with a focus on Typescript. My expertise lies in utilizing Material UI and Bootstrap to create sleek and modern user interfaces. I am also proficient in using React Router DOM to create smooth and seamless user experiences.
+                    My passion for coding started at a young age, and I have since dedicated myself to becoming a skilled and innovative developer. I am constantly pushing the boundaries of what is possible with my skills, and I love taking on challenging projects that allow me to grow and expand my knowledge.
+                    When I am not coding, I enjoy VideoGaming, reading, and spending time with my family.
+                  </p >
                   <div className="gaper-img"></div>
                 </Col>
                 <Col className="info" md={6}>
@@ -73,7 +61,7 @@ export const About = () => {
                     <div className="skill-item">
                       <div className="skill-info">
                         <h4 className="text-infos">Front-end Development</h4>
-                        <span className="pro">85%</span>
+                        <span className="pro">100%</span>
                       </div>
                       <div className="progress-bar">
                         <div className="progress-third"></div>
@@ -102,7 +90,7 @@ export const About = () => {
                 <Col className="" md={3} sm={6} xs={6}>
                   <div className="details">
                     <Circle
-                      progress={90}
+                      progress={100}
                       animate={true}
                       animationDuration="2s"
                       bgColor="#6d6d6d"
@@ -122,7 +110,7 @@ export const About = () => {
                 <Col className="" md={3} sm={6} xs={6}>
                   <div className="details">
                     <Circle
-                      progress={80}
+                      progress={99}
                       animate={true}
                       animationDuration="2s"
                       bgColor="#6d6d6d"
@@ -136,13 +124,13 @@ export const About = () => {
                       }}
                       percentSpacing={1}
                     />
-                    <p className="circle-info">Node Js </p>
+                    <p className="circle-info">TypeScript </p>
                   </div>
                 </Col>
                 <Col className="" md={3} sm={6} xs={6}>
                   <div className="details">
                     <Circle
-                      progress={85}
+                      progress={95}
                       animate={true}
                       animationDuration="2s"
                       bgColor="#6d6d6d"
