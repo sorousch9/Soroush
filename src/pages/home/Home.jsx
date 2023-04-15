@@ -1,9 +1,8 @@
-import React from "react";
-import { About } from "../About/About";
-import { Resume } from "../Resume/Resume";
-import { Header } from "../Header/Header";
-import { Works } from "../Works/Works";
-import { Contact } from "../Contact/Contact";
+import { About } from "../../components/About/About";
+import { Resume } from "../../components/Resume/Resume";
+import { Header } from "../../components/Header/Header"
+import { Works } from "../../components/Works/Works";
+import { Contact } from "../../components/Contact/Contact";
 
 export const Home = () => {
   return (
